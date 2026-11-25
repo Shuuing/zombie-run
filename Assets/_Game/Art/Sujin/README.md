@@ -16,6 +16,13 @@ Sujin/
 - 이름이 겹친 이펙트 텍스처 4장(탕탕 쪽 `Color` · `Glow_011` · `Mask_013` · `Ring_005`)은 옮기며 `_02` 를 붙였다(GUID 그대로라 연결은 같음). 기록 `_Backup/20261125_SujinTypeMerge`.
 - 텍스처를 새로 굽는 도구도 `S_Textures/VFX` 에 쓴다: `OrbitBladeTrailSetup`(T_OrbitTrail_*) · `InfernoFlameSetup` + `ArtSource/VFX/bake_inferno_textures.py`(T_Inferno_*) · `FxPackImport`(소총 T_MSFX_*).
 
+## 이름 규칙 (2026-11-25, 사용자)
+
+- 이펙트 프리팹은 모두 `FX_` 로 시작, 3D 메시(.fbx · 메시 .asset)는 `FXM_`.
+- 무기 이펙트 `FX_무기_스킬`(FX_Rifle_Muzzle · FX_Inferno_Jet · FX_OrbitBlade_Trail · FX_Drone_Bullet · FX_Cannon_Bullet · FX_Tank_CannonHit), 필사기 `FX_Ult_스킬_부분`(S_VFX/Ult 폴더), 그 밖은 `FX_폴더_이름`(FX_Explosion_* · FX_Hit_* · FX_Enemy_* · FX_Boss_* · FX_Pickup_* · FX_Char_* · FX_Shared_*).
+- 안 쓰는 것(_Unused)은 꼬리 `_Old` · `_Original` · `_Template`. 메시: FXM_HalfSphere_01/02 · FXM_Ring_01 · FXM_Cone_01 · FXM_Rifle_MuzzleQuad.
+- 이름만 바꿨고 GUID 는 그대로라 카탈로그 ID(boss_spawn 등) · 무기 연출 세트 연결은 같다. 템플릿을 굽는 코드(FxTemplatePrefabs) · 경로 상수(FxAssetsSetup)도 새 이름. 바뀐 표 `_Backup/20261125_FxRename/moves.tsv`.
+
 ## GitHub 에 올리는 것 (2026-11-25)
 
 - **`Assets/Soo_VFX`(외부 팩 창고)와 `Assets/_Reference`(추출본 창고)는 GitHub(Shuuing/zombie-run)에 올리지 않는다**(.gitignore). 내 컴퓨터에는 그대로 있다.
@@ -27,18 +34,19 @@ Sujin/
 
 | 폴더 | 들어 있는 것 | 카탈로그 ID · 쓰는 곳 |
 |---|---|---|
-| `Weapon/Rifle/` | 총구 `FX_Rifle_TangTang_Muzzle` · 착탄 `FX_Rifle_TangTang_Hit`(사용자 손편집) · 소총 탄 `FX_Gatling1_Bullet`★(11-25 사용자가 MFX_ → FX_ 로 이름 바꿈) · 루키 필사기 탄 `FX_TargetKill_Bullet_Shock`★ · 히트 `FX_TargetKill_Hit`★ · `MSFX/`(복사본 머티리얼 · 메시 — 텍스처 T_MSFX_* 는 S_Textures/VFX) | `FX_Rifle_Muzzle_Flashy` · `FX_Rifle_Hit` · WS_Rifle_TangTang 탄 · `ult_target_kill_*` |
-| `Weapon/Inferno/` | 불줄기 `FX_Inferno_Jet` + 머티리얼 · `Source~`(텍스처 T_Inferno_* 는 S_Textures/VFX) · 불 고리 `FX_Inferno_FireRing`★(파이로 필사기) | `inferno_jet` · `ult_fire_ring` |
+| `Weapon/Rifle/` | 총구 `FX_Rifle_Muzzle` · 착탄 `FX_Rifle_Hit`(사용자 손편집) · 소총 탄 `FX_Rifle_Bullet`★ · `MSFX/`(복사본 머티리얼 · 메시 `FXM_Rifle_MuzzleQuad` — 텍스처 T_MSFX_* 는 S_Textures/VFX) | `FX_Rifle_Muzzle_Flashy` · `FX_Rifle_Hit` · 소총 무기 수치 탄 |
+| `Weapon/Inferno/` | 불줄기 `FX_Inferno_Jet` + 머티리얼 · `Source~`(텍스처 T_Inferno_* 는 S_Textures/VFX) | `inferno_jet` |
 | `Weapon/OrbitBlade/` | 톱날 꼬리 `FX_OrbitBlade_Trail` + 머티리얼(텍스처 T_OrbitTrail_* 는 S_Textures/VFX) | `orbit_blade_trail` |
-| `Weapon/Drone/` · `Weapon/Cannon/` | 미니 비행기 탄 `Bullet_miniplane1_1`★ · `1_2`★ | WS_SupportDrone · WS_TangTangCannon 탄 |
-| `Explosion/` | 탈것 폭발 `FX_Car_Explosion`★ · 좀비 처치 `FX_Zombie_Death`★ · 탱크 대포 착탄 `FX_Death_XiaoGuai_002`★ | `van_blast` · `tank_blast` · `heli_crash_impact` · `fx_zombie_death` · `tank_cannon_hit` |
-| `Hit/` | 타격 불똥 `FX_HitSpark` · 처치 터짐 `FX_KillBurst` · 피 터짐 `FX_ZombieGore`(템플릿) · 피 튀김 `FX_HitBlood`☆(11-25 사용자가 이름 바꿈) | `hit_spark` · `kill_burst` · `zombie_gore` · `hit_blood` |
-| `Enemy/` | 좀비 할퀴기☆ · 독 구슬☆ · 독 착탄☆ · 독가스☆ · 독 맞음☆ | `zombie_claw_hit` · `poison_bolt(_hit)` · `poison_gas_cloud` · `player_poison_hit` |
-| `Boss/` | 등장☆ · 내려찍기☆ · 망치 궤적☆ · 기모으기 먼지☆ · 예고 원☆ | `boss_spawn` · `boss_impact` · `boss_hammer_trail` · `boss_windup_dust` · `boss_telegraph` |
-| `Pickup/` | 젬 줍기 `FX_GemPickup`(템플릿) · 물고기 반짝이☆ · 흡수 꼬리☆ | `gem_pickup` · `gem_sparkle` · `gem_trail` |
-| `Character/` | 교체 등장 노랑 `MFX_ChuanSong_Appear_Yellow`★ · 낙하산 착지 연기 `MFX_Landing_Smoke`★ | `char_swap_appear` · `weapon_change_appear` · `intro_landing` |
-| `_Unused/` | 게임에 안 연결된 것 — 착지 예비 템플릿 · 옛 소총 템플릿 3(`Rifle_Template`) · 소총 MSFX 손보기 전 원본 3(`Rifle_MSFX_Original`) · `arrow_white`★ · `Hitted_Machine_Small`★ (11-25: 아무도 안 쓰던 비륜 1차★ · 개틀링 Super★ · 독 공☆ 은 `_Reference/*/Prefabs/_Unused` 로 내보냄) | (카탈로그 `rifle_*` · `FX_Rifle_TangTang_Hit_2` · `FX_Rifle_Muzzle` 항목이 아직 가리키는 것도 있다) |
-| `Shared/` | 위 이펙트들이 같이 쓰는 재료 — 출처 구분 없이 종류별: `Materials/`(105) · `Meshes/`(4) · `Sprites/`(37) · `Prefabs/`(`Light` — 착탄 `FX_Rifle_TangTang_Hit` 이 씀). 텍스처는 `S_Textures/VFX`, 셰이더는 `S_Shaders/VFX`. 11-25 부터 쓰는 것만(안 쓰던 22개는 `_Reference` 로) | — |
+| `Weapon/Drone/` · `Weapon/Cannon/` · `Weapon/Tank/` | 드론 탄 `FX_Drone_Bullet`★ · 캐논 탄 `FX_Cannon_Bullet`★ · 탱크 대포 착탄 `FX_Tank_CannonHit`★ | 지원 드론 · 캐논 무기 수치 탄 · `tank_cannon_hit` |
+| `Ult/` | 루키 필사기 탄 `FX_Ult_TargetKill_Bullet`★ · 히트 `FX_Ult_TargetKill_Hit`★ · 파이로 필사기 불 고리 `FX_Ult_FireRing`★ | `ult_target_kill_bullet` · `ult_target_kill_hit` · `ult_fire_ring` |
+| `Explosion/` | 탈것 폭발 `FX_Explosion_Vehicle`★ · 좀비 처치 `FX_Explosion_ZombieDeath`★ | `van_blast` · `tank_blast` · `heli_crash_impact` · `fx_zombie_death` |
+| `Hit/` | 타격 불똥 `FX_Hit_Spark` · 처치 터짐 `FX_Hit_KillBurst` · 피 터짐 `FX_Hit_Gore`(템플릿) · 피 튀김 `FX_Hit_Blood`☆ | `hit_spark` · `kill_burst` · `zombie_gore` · `hit_blood` |
+| `Enemy/` | 좀비 할퀴기 `FX_Enemy_ClawHit`☆ · 독 구슬 `FX_Enemy_PoisonBolt`☆ · 독 착탄 `FX_Enemy_PoisonBoltHit`☆ · 독가스 `FX_Enemy_PoisonGas`☆ · 독 맞음 `FX_Enemy_PoisonHitPlayer`☆ | `zombie_claw_hit` · `poison_bolt(_hit)` · `poison_gas_cloud` · `player_poison_hit` |
+| `Boss/` | 등장 `FX_Boss_Spawn`☆ · 내려찍기 `FX_Boss_Impact`☆ · 망치 궤적 `FX_Boss_HammerTrail`☆ · 기모으기 먼지 `FX_Boss_WindupDust`☆ · 예고 원 `FX_Boss_Telegraph`☆ | `boss_spawn` · `boss_impact` · `boss_hammer_trail` · `boss_windup_dust` · `boss_telegraph` |
+| `Pickup/` | 젬 줍기 `FX_Pickup_Gem`(템플릿) · 물고기 반짝이 `FX_Pickup_FishSparkle`☆ · 흡수 꼬리 `FX_Pickup_FishTrail`☆ | `gem_pickup` · `gem_sparkle` · `gem_trail` |
+| `Character/` | 교체 등장 노랑 `FX_Char_SwapAppear`★ · 낙하산 착지 연기 `FX_Char_IntroLanding`★ | `char_swap_appear` · `weapon_change_appear` · `intro_landing` |
+| `_Unused/` | 게임에 안 연결된 것 — 착지 예비 템플릿 `FX_Char_IntroLanding_Template` · 옛 소총 템플릿 3(`Rifle_Template/FX_Rifle_*_Template`) · 소총 손보기 전 원본 3(`Rifle_MSFX_Original/FX_Rifle_*_Original`) · `FX_Rifle_Muzzle_Old`★ · `FX_Rifle_Hit_Old`★ (11-25: 아무도 안 쓰던 비륜 1차★ · 개틀링 Super★ · 독 공☆ 은 `_Reference/*/Prefabs/_Unused` 로 내보냄) | (카탈로그 `rifle_*` · `FX_Rifle_Hit_2` · `FX_Rifle_Muzzle` 항목이 아직 가리키는 것도 있다) |
+| `Shared/` | 위 이펙트들이 같이 쓰는 재료 — 출처 구분 없이 종류별: `Materials/`(105) · `Meshes/`(FXM_HalfSphere_01 · 02 · FXM_Ring_01 · FXM_Cone_01) · `Sprites/`(37) · `Prefabs/`(`FX_Shared_Light` — 착탄 `FX_Rifle_Hit` 이 씀). 텍스처는 `S_Textures/VFX`, 셰이더는 `S_Shaders/VFX`. 11-25 부터 쓰는 것만(안 쓰던 22개는 `_Reference` 로) | — |
 | `_Docs/` | ★ · ☆ 이펙트를 가져오고 손본 설명서 — `README_SurvivorAce.md`(미니 비행기 탄 등) · `README_ChuanSong` · `README_FeiLunFire` · `README_LandingSmoke` · `README_MeteoriteExplosion` · `README_TankCannonHit` · `README_TargetKillBullet` · `README_TangTang.md`(옛 `_Reference/*/README*.md`, 본문 경로는 옛 자리 기준) | — |
 
 > ⚠ **★ = Survivor Ace 추출본(을 손본 것), ☆ = 탕탕특공대(Habby) 추출본** — 남의 게임 저작물이다. 프로토에서 느낌을 보는 용도로만 쓰고, **빌드 · 외부 공개 전에 우리 이펙트로 바꾼다.**

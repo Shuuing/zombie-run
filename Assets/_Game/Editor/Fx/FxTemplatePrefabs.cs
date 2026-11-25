@@ -35,7 +35,7 @@ public static class FxTemplatePrefabs
     static readonly string[] AlphaMats = { "M_Fx_Smoke", "M_Fx_Blood", "M_Fx_BloodDrop", "M_Fx_BloodMist", "M_Fx_BloodSheet", "M_Fx_Debris", "M_Fx_DustRing" };   // 피·먼지·잔돌은 빛나지 않는다 — 알파 블렌드, 밤 어둠 막 앞 큐
 
     /// 조립 함수가 바뀌어 옛 프리팹에 없는 자식이 생긴 템플릿 — (이름, 표식 자식). 에디터가 뜰 때 FxAssetsSetup.AutoCreate 가 보고 대화상자 없이 덮어쓴다.
-    static readonly (string name, string marker)[] Outdated = { ("FX_ZombieGore", "_v6"), ("FX_IntroLanding", "_v1") };   // 조립을 고치면 표식 이름을 올리고(_v4 …) 조립 함수의 Child 도 같이
+    static readonly (string name, string marker)[] Outdated = { ("FX_Hit_Gore", "_v6"), ("FX_Char_IntroLanding_Template", "_v1") };   // 조립을 고치면 표식 이름을 올리고(_v4 …) 조립 함수의 Child 도 같이
 
     /// 표식 자식이 없는 옛 템플릿을 코드 값으로 다시 굽는다. 돌려주는 값 = 다시 구운 수.
     public static int RebuildOutdated()
@@ -66,16 +66,16 @@ public static class FxTemplatePrefabs
     {
         // ── 공통 — 전용 세트가 없는 무기가 쓰는 기본 모양 ──
         new Template { name = "FX_MuzzleFlash", dir = Dir, build = BuildMuzzleFlash },
-        new Template { name = "FX_HitSpark",    dir = SVfx + "/Hit", build = BuildHitSpark },
-        new Template { name = "FX_KillBurst",   dir = SVfx + "/Hit", build = BuildKillBurst },
-        new Template { name = "FX_GemPickup",   dir = SVfx + "/Pickup", build = BuildGemPickup },
-        new Template { name = "FX_ZombieGore",  dir = SVfx + "/Hit", build = BuildZombieGore },   // 처치 피 터짐 (2026-11-05)
-        new Template { name = "FX_IntroLanding", dir = SVfx + "/_Unused", build = BuildIntroLanding }, // 시작 연출 낙하산 착지 (2026-11-16)
+        new Template { name = "FX_Hit_Spark",    dir = SVfx + "/Hit", build = BuildHitSpark },
+        new Template { name = "FX_Hit_KillBurst",   dir = SVfx + "/Hit", build = BuildKillBurst },
+        new Template { name = "FX_Pickup_Gem",   dir = SVfx + "/Pickup", build = BuildGemPickup },
+        new Template { name = "FX_Hit_Gore",  dir = SVfx + "/Hit", build = BuildZombieGore },   // 처치 피 터짐 (2026-11-05)
+        new Template { name = "FX_Char_IntroLanding_Template", dir = SVfx + "/_Unused", build = BuildIntroLanding }, // 시작 연출 낙하산 착지 (2026-11-16)
 
         // ── 루키 탕탕 소총 (2026-11-04, 무기별 세트 1호) — 예광탄 노랑(ProtoGunFx.TracerColor) 계열로 통일 ──
-        new Template { name = "FX_Rifle_Muzzle", dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleMuzzle },
-        new Template { name = "FX_Rifle_Hit",    dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleHit },
-        new Template { name = "FX_Rifle_Kill",   dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleKill },
+        new Template { name = "FX_Rifle_Muzzle_Template", dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleMuzzle },
+        new Template { name = "FX_Rifle_Hit_Template",    dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleHit },
+        new Template { name = "FX_Rifle_Kill_Template",   dir = SVfx + "/_Unused/Rifle_Template", build = BuildRifleKill },
     };
 
     /// 템플릿 이름 전부(메뉴 순서).
@@ -101,10 +101,10 @@ public static class FxTemplatePrefabs
     // 다시 굽기 — 코드 값으로 **덮어쓴다**. 같은 경로에 저장하므로 GUID 가 그대로라 카탈로그·WFX 참조는 안 끊긴다.
     // 프리팹을 손으로 고친 게 있으면 사라지므로 묻고 한다. 코드의 값을 손본 뒤 화면에 반영하는 길이다.
     [MenuItem("Tools/좀비 오버런/FX 툴/소총 템플릿 다시 굽기 (덮어쓰기)")]
-    public static void RebuildRifle() => Rebuild("FX_Rifle_Muzzle", "FX_Rifle_Hit", "FX_Rifle_Kill");
+    public static void RebuildRifle() => Rebuild("FX_Rifle_Muzzle_Template", "FX_Rifle_Hit_Template", "FX_Rifle_Kill_Template");
 
     [MenuItem("Tools/좀비 오버런/FX 툴/공통 템플릿 다시 굽기 (덮어쓰기)")]
-    public static void RebuildCommon() => Rebuild("FX_MuzzleFlash", "FX_HitSpark", "FX_KillBurst", "FX_GemPickup", "FX_ZombieGore", "FX_IntroLanding");
+    public static void RebuildCommon() => Rebuild("FX_MuzzleFlash", "FX_Hit_Spark", "FX_Hit_KillBurst", "FX_Pickup_Gem", "FX_Hit_Gore", "FX_Char_IntroLanding_Template");
 
     public static void Rebuild(params string[] names)
     {

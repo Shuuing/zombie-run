@@ -177,13 +177,13 @@ public static class FxAssetsSetup
         added += Add(cat, FxIds.MuzzleFlash, "타격감 — 총구 화염. 자리 = 총구, +Z = 총열 방향, scale 1 = 소총(캐논 1.35 · 샷건 1.25 · 필사기 더 큼, big). 캐논은 초당 12발 — 수명 0.1 · 동시 8. 템플릿: Art/VFX/Common/FX_MuzzleFlash",
                      builtin: FxIds.MuzzleFlash, life: 0.1f, pool: 8, maxAlive: 8, onTop: true);
         added += Add(cat, FxIds.HitSpark, "타격감 — 피격 불똥. 자리 = 맞은 몸통(가슴 높이의 맞은 쪽), +Z = 총알이 날아온 쪽(튀는 방향), scale = 덩치(치명타 ×1.5, big). 흰 플래시·소리는 코드(ProtoConfig.HitFlash*). 90마리 물량전 — 동시 20",
-                     prefab: Template("FX_HitSpark"), life: 0.4f, pool: 24, maxAlive: 20, previewOffset: new Vector3(0f, 0.95f, 0f), onTop: true);
+                     prefab: Template("FX_Hit_Spark"), life: 0.4f, pool: 24, maxAlive: 20, previewOffset: new Vector3(0f, 0.95f, 0f), onTop: true);
         added += Add(cat, FxIds.KillBurst, "타격감 — 처치 터짐. 자리 = 몸 가운데, scale = 덩치, big = 보스·엘리트. 사망 애니·소리(zdie)는 코드",
-                     prefab: Template("FX_KillBurst"), life: 0.8f, pool: 12, maxAlive: 12, previewOffset: new Vector3(0f, 0.8f, 0f));
+                     prefab: Template("FX_Hit_KillBurst"), life: 0.8f, pool: 12, maxAlive: 12, previewOffset: new Vector3(0f, 0.8f, 0f));
         added += Add(cat, FxIds.GemPickup, "보상 — 젬 흡수 순간. 자리 = 젬, scale = 젬 등급(작음 0.8 · 중간 1 · 큼 1.4). 소리(gem 사다리)는 코드",
-                     prefab: Template("FX_GemPickup"), life: 0.6f, pool: 12, maxAlive: 12, previewOffset: new Vector3(0f, 0.35f, 0f));
+                     prefab: Template("FX_Pickup_Gem"), life: 0.6f, pool: 12, maxAlive: 12, previewOffset: new Vector3(0f, 0.35f, 0f));
         added += Add(cat, FxIds.ZombieGore, "타격감 — 처치 피 터짐(팩 피 시트 터짐 · 핏방울 줄기 · 가닥 · 안개 · 바닥에 흩어진 핏자국은 몸 조각이 녹을 때 같이 사라진다, 1.4~2.4초). 자리 = 몸 가운데, +Z = 맞은 방향, scale = 덩치. 몸 조각은 코드 그림(ZombieGibs — [무기] 탭 파편 줄). 보스·불타 죽은 적은 안 낸다",
-                     prefab: Template("FX_ZombieGore"), life: ZombieGoreLife, pool: 16, maxAlive: 16, previewOffset: new Vector3(0f, 0.8f, 0f));
+                     prefab: Template("FX_Hit_Gore"), life: ZombieGoreLife, pool: 16, maxAlive: 16, previewOffset: new Vector3(0f, 0.8f, 0f));
         added += Add(cat, FxIds.IntroLanding, "세리머니 — 시작 연출 낙하산 착지(2026-11-16): Survivor Ace 보스 낙하 연기 복사본(MFX_Landing_Smoke — 만화풍 연기 뭉치가 터져 고리로 퍼짐 · 빛 · 속도선, 푸른 흰 회색, 0.6초, 임시 — 출시 전 교체). 자리 = 착지 지점(바닥), scale 1 = 캐릭터. 흔들림 · 찌그러짐 · 소리(land)는 ProtoIntro. 비우면 예전 교체 착지 먼지(FX_SwapLanding). 우리 템플릿: Art/VFX/Common/FX_IntroLanding",
                      prefab: IntroLandingPrefab(), life: 1.4f, pool: 1, maxAlive: 1);
         added += Upgrades(cat);
@@ -191,11 +191,11 @@ public static class FxAssetsSetup
         // ── 무기별 — 루키 탕탕 소총 (2026-11-04, 1호). 공통 ID 와 따로 두는 이유: 소총만 고쳐도 다른 무기는 그대로다.
         //    WFX_Rifle_TangTang 의 슬롯이 이 ID 들을 가리킨다. 모양은 Art/VFX/Weapons/Rifle 의 템플릿 — 아트가 그 프리팹을 고치거나 바꾼다 ──
         added += Add(cat, FxIds.RifleMuzzle, "무기·소총 — 총구: 심·4갈래 별·불줄기·불똥·연기. 자리 = 총구, +Z = 총열, scale 1 = 소총. 연기가 0.5s 남아 수명 0.55. 폴백 = 공통 코드 그림. 템플릿: Art/VFX/Weapons/Rifle/FX_Rifle_Muzzle",
-                     prefab: Template("FX_Rifle_Muzzle"), builtin: FxIds.RifleMuzzle, life: 0.55f, pool: 6, maxAlive: 6, previewOffset: new Vector3(0f, 1.1f, 0.45f), onTop: true);
+                     prefab: Template("FX_Rifle_Muzzle_Template"), builtin: FxIds.RifleMuzzle, life: 0.55f, pool: 6, maxAlive: 6, previewOffset: new Vector3(0f, 1.1f, 0.45f), onTop: true);
         added += Add(cat, FxIds.RifleHit, "무기·소총 — 피격 불똥 + 먼지 한 뭉치. 자리 = 착탄점, +Z = 총알이 온 쪽, scale = 덩치(치명타 ×1.5). 물량전 — 동시 20. 템플릿: FX_Rifle_Hit",
-                     prefab: Template("FX_Rifle_Hit"), life: 0.4f, pool: 24, maxAlive: 20, previewOffset: new Vector3(0f, 0.95f, 0f), onTop: true);
+                     prefab: Template("FX_Rifle_Hit_Template"), life: 0.4f, pool: 24, maxAlive: 20, previewOffset: new Vector3(0f, 0.95f, 0f), onTop: true);
         added += Add(cat, FxIds.RifleKill, "무기·소총 — 처치: 섬광·바닥 링·파편·반짝임, 예광탄 노랑. 자리 = 몸 가운데, scale = 덩치. 템플릿: FX_Rifle_Kill",
-                     prefab: Template("FX_Rifle_Kill"), life: 0.8f, pool: 8, maxAlive: 10, previewOffset: new Vector3(0f, 0.8f, 0f));
+                     prefab: Template("FX_Rifle_Kill_Template"), life: 0.8f, pool: 8, maxAlive: 10, previewOffset: new Vector3(0f, 0.8f, 0f));
         // ── 화염방사기 (2026-11-05): 화염 줄기는 ProtoFx.Play 로 내지 않는다 — WFX_Flamethrower.jet 이 이 ID 를 가리키고 ProtoFlamePack 이 프리팹을 총구에 세워 방출을 여닫는다(스팬).
         //    프리팹은 FxPackImport 가 팩 RedFlameThrower 를 복사해 채운다. 루트 스케일은 런타임이 사거리로 맞춘다(루트의 속도 × 수명 기준). ──
         // (flamethrower_jet 항목 — 11-23 지움: 팩 복사본을 안 쓴다. 다시 쓰려면 메뉴 '화염방사기에 MasterStylizedFX 입히기'가 항목을 만든다)
@@ -228,8 +228,8 @@ public static class FxAssetsSetup
     }
 
     /// 물고기 젬 반짝이 · 꼬리 — 탕탕 복사본(2026-11-18, Sujin/S_VFX/Shared/TangTang/README.md). 카탈로그에 항목이 없을 때만 채운다.
-    const string GemSparkleTT = "Assets/_Game/Art/Sujin/S_VFX/Pickup/FX_FishSparkle.prefab";   // 11-23 옮김(옛 _Reference/TangTang/Prefabs/Pickup)
-    const string GemTrailTT = "Assets/_Game/Art/Sujin/S_VFX/Pickup/FX_FishTrail.prefab";
+    const string GemSparkleTT = "Assets/_Game/Art/Sujin/S_VFX/Pickup/FX_Pickup_FishSparkle.prefab";   // 11-23 옮김(옛 _Reference/TangTang/Prefabs/Pickup)
+    const string GemTrailTT = "Assets/_Game/Art/Sujin/S_VFX/Pickup/FX_Pickup_FishTrail.prefab";
 
     /// 바닥 핏자국이 조각 수명 상한(ZombieGibs.Life 1.8 × 1.2 = 2.16초) + 떨어지는 시간차 0.25초까지 남는다 — 그보다 짧으면 풀로 돌아가며 뚝 끊긴다.
     /// 5.2(11-05, 바닥 피 4.8초) → 2.6(11-06 사용자 "파편 사라질 때 같이"). 템플릿의 GroundLife() 와 짝.
@@ -237,13 +237,13 @@ public static class FxAssetsSetup
 
     /// 낙하산 착지 그림 — Survivor Ace 복사본(2026-11-16 사용자 "Survivor Ace 에서 가져와서 쓸 수 있는 걸로", Source~/import_landing.py)이 있으면 그것,
     /// 없으면(폴더를 지웠으면) 우리 템플릿 FX_IntroLanding.
-    const string IntroLandingSA = "Assets/_Game/Art/Sujin/S_VFX/Character/MFX_Landing_Smoke.prefab";   // 11-23 옮김(옛 _Reference/SurvivorAce/Prefabs/Appear)
+    const string IntroLandingSA = "Assets/_Game/Art/Sujin/S_VFX/Character/FX_Char_IntroLanding.prefab";   // 11-23 옮김(옛 _Reference/SurvivorAce/Prefabs/Appear)
     /// 탱크 대포 착탄 그림 — Survivor Ace FX_Death_XiaoGuai_002 원본 복사(2026-11-17, Source~/import_xiaoguai.py). 카탈로그에 항목이 없을 때만 채운다.
-    const string TankCannonHitSA = "Assets/_Game/Art/Sujin/S_VFX/Explosion/FX_Death_XiaoGuai_002.prefab";   // 11-23 옮김
+    const string TankCannonHitSA = "Assets/_Game/Art/Sujin/S_VFX/Weapon/Tank/FX_Tank_CannonHit.prefab";   // 11-23 옮김
     static GameObject IntroLandingPrefab()
     {
         var sa = AssetDatabase.LoadAssetAtPath<GameObject>(IntroLandingSA);
-        return sa != null ? sa : Template("FX_IntroLanding");
+        return sa != null ? sa : Template("FX_Char_IntroLanding_Template");
     }
 
     /// 이미 있는 항목이 코드보다 뒤처졌으면 맞춘다(수명이 길어진 효과). 돌려주는 값 = 고친 수.
@@ -255,7 +255,7 @@ public static class FxAssetsSetup
             // 3단계(2026-11-16): 낙하산 착지가 우리 템플릿으로 먼저 채워졌으면 Survivor Ace 복사본으로 한 번 바꾼다(사용자가 SA 것을 골랐다). 창에서 다시 바꾸면 그대로 둔다
             var land = cat.Find(FxIds.IntroLanding);
             var sa = AssetDatabase.LoadAssetAtPath<GameObject>(IntroLandingSA);
-            if (land != null && sa != null && (land.prefab == null || land.prefab.name == "FX_IntroLanding"))
+            if (land != null && sa != null && (land.prefab == null || land.prefab.name == "FX_Char_IntroLanding_Template"))
             {
                 land.prefab = sa; n++;
                 Debug.Log("[FX 툴] 카탈로그 손질 3단계 — 낙하산 착지(intro_landing)를 Survivor Ace 복사본 MFX_Landing_Smoke 로");

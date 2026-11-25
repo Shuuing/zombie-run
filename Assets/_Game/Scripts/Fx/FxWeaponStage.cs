@@ -859,7 +859,7 @@ namespace Proto
             var go = _goreHandle != null ? _goreHandle.Instance : null;
             if (go == null || !_goreHandle.Alive) { Status = "바닥 피 진단: zombie_gore 인스턴스가 0.6초 안에 사라졌다 — 카탈로그 수명(2.6초여야)을 볼 것"; Debug.LogWarning("[피] " + Status); return; }
             var g = go.transform.Find("GroundSplats");
-            if (g == null) { Status = $"바닥 피 진단: 프리팹 {go.name} 에 GroundSplats 자식이 없다 — 옛 프리팹(Art/VFX/Common/FX_ZombieGore)"; Debug.LogWarning("[피] " + Status); return; }
+            if (g == null) { Status = $"바닥 피 진단: 프리팹 {go.name} 에 GroundSplats 자식이 없다 — 옛 프리팹(S_VFX/Hit/FX_Hit_Gore)"; Debug.LogWarning("[피] " + Status); return; }
             int Count(Transform t) { var ps = t != null ? t.GetComponent<ParticleSystem>() : null; return ps != null ? ps.particleCount : -1; }
             Status = $"바닥 피 진단: 핏자국(시트) {Count(g)}개 · 단색 {Count(g.Find("GroundStains"))}개 · 웅덩이 {Count(g.Find("Pool"))}개 · 바닥 y {g.position.y:0.00} (더미 발 y {DummyPos.y:0.00}) · 인스턴스 {go.name} {(go.activeInHierarchy ? "활성" : "비활성")} · 루트 크기 {go.transform.localScale.x:0.00}";
             Debug.Log("[피] " + Status);

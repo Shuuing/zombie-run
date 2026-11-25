@@ -47,7 +47,7 @@ namespace Proto
             // 탱크: 파괴 폭발 · 잔해 작은 폭발
             ProtoFx.RegisterBuiltin(FxIds.TankBlast, c => ProtoExplosion.Play(c.WorldPosition, c.radius > 0f ? c.radius : 3f, shake: !c.quiet));
             ProtoFx.RegisterBuiltin(FxIds.TankDebrisPop, c => ProtoExplosion.Play(c.WorldPosition, c.radius > 0f ? c.radius : 1.4f, shake: !c.quiet));
-            // 탱크 대포 착탄(2026-11-17) — 폴백은 공용 착탄 폭발과 똑같은 코드 그림(프리팹 FX_Death_XiaoGuai_002 를 비우면 예전 그대로)
+            // 탱크 대포 착탄(2026-11-17) — 폴백은 공용 착탄 폭발과 똑같은 코드 그림(프리팹 FX_Tank_CannonHit 를 비우면 예전 그대로)
             ProtoFx.RegisterBuiltin(FxIds.TankCannonHit, c => ProtoExplosion.Play(c.WorldPosition, c.radius > 0f ? c.radius : 2.6f, shake: !c.quiet));
             // 파이로 필사기 연소 — 화상 적이 터진다(첫 발만 흔들림)
             ProtoFx.RegisterBuiltin(FxIds.UltCombust, c => ProtoExplosion.Play(c.WorldPosition, c.radius > 0f ? c.radius : 1.5f, false, shake: !c.quiet));
@@ -55,7 +55,7 @@ namespace Proto
             // ── 빈도 높은 타격감 (2026-10-30 프리팹 교체 1차) ──
             // 총구 화염 — 기존 코드 그림(ProtoGunFx, 별 + 앞으로 뻗는 불꽃). +Z = 총열 방향, scale 1 = 소총
             ProtoFx.RegisterBuiltin(FxIds.MuzzleFlash, c => ProtoGunFx.MuzzleFlash(c.WorldPosition, c.WorldRotation * Vector3.forward, c.scale));
-            // 피격 불똥 · 처치 터짐 · 젬 흡수는 코드 그림이 없다 — 카탈로그의 프리팹(템플릿 FX_HitSpark 등)만 쓴다.
+            // 피격 불똥 · 처치 터짐 · 젬 흡수는 코드 그림이 없다 — 카탈로그의 프리팹(템플릿 FX_Hit_Spark 등)만 쓴다.
             // 프리팹 슬롯을 비우면 아무것도 안 나온다(피격 플래시·소리·사망 애니는 코드가 그대로 한다).
 
             // ── 무기별 (2026-11-04) — WFX 에셋이 가리키는 ID. 총구 폴백은 공통 코드 그림과 같다(프리팹 칸을 비워도 쏘는 게 보이게) ──

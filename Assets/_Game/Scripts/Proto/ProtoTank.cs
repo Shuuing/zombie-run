@@ -37,7 +37,7 @@ namespace Proto
         const float RamCost             = 1.5f;    // 박치기 1마리당 탱크 HP
         const float RamMinSpeed         = 1.2f;    // 이보다 느리면 박치기가 아니라 '붙어 있는 것'
         const float ExplodeRadius       = 3.6f;
-        // 파괴 폭발 프리팹(FX_Car_Explosion) 배율 — 승합차 2 기준. 예전 코드 그림 폭발 크기 비(탱크 3.6 : 승합차 5×0.85)를 따랐다.
+        // 파괴 폭발 프리팹(FX_Explosion_Vehicle) 배율 — 승합차 2 기준. 예전 코드 그림 폭발 크기 비(탱크 3.6 : 승합차 5×0.85)를 따랐다.
         // 11-13 ×0.85 는 좀비 처치 폭발만 해서 "안 보인다" → ×2 배로(불덩이가 판정 반경의 절반쯤)
         const float BlastFxScale        = 1.7f;
         const float ExplodeDamage       = 80f;
@@ -54,7 +54,7 @@ namespace Proto
 
         // 전용 포
         const float CannonDamage = 55f, CannonInterval = 1.1f, CannonRange = 12f, CannonAoe = 2.6f;
-        // 착탄 폭발 그림 = 카탈로그 tank_cannon_hit(2026-11-17, 프리팹 Survivor Ace FX_Death_XiaoGuai_002). 이 배율은 프리팹 루트 위에 곱한다 —
+        // 착탄 폭발 그림 = 카탈로그 tank_cannon_hit(2026-11-17, 프리팹 Survivor Ace FX_Tank_CannonHit). 이 배율은 프리팹 루트 위에 곱한다 —
         // 크기를 바꾸려면 이 값이나 FX 툴 카탈로그 '크기(프리팹 루트)'. 프리팹 칸을 비우면 예전 공용 착탄 폭발(링 = 판정 반경)
         const float CannonHitFxScale = 1f;
         // 가까이서 터지면 작게(2026-11-17 "거리에 따라 이펙트 사이즈를"): 포구(탱크 중심에서 2m 앞)에서 거의 안 날아가고 터지면 ×CannonHitNearScale,
@@ -191,7 +191,7 @@ namespace Proto
             _cannon.projectileRadius = 0.55f;
             _cannon.projectileLife = 1.2f;
             _cannon.projectileSize = 0.42f;
-            // 착탄 폭발을 공용 explosion 대신 탱크 전용 카탈로그 항목으로(2026-11-17 "FX_Death_XiaoGuai_002 를 대포 착탄에").
+            // 착탄 폭발을 공용 explosion 대신 탱크 전용 카탈로그 항목으로(2026-11-17 "FX_Death_XiaoGuai_002 를 대포 착탄에" — 지금 이름 FX_Tank_CannonHit).
             // 세트 기본값(처치 kill_burst 등)은 그대로 — 바뀌는 건 explode 슬롯 하나뿐이다.
             _cannonFx = ScriptableObject.CreateInstance<WeaponFxSet>();
             _cannonFx.name = "(탱크 포 연출)";
@@ -454,7 +454,7 @@ namespace Proto
             Exit(true);
 
             Vector3 c = transform.position;
-            // 카탈로그 tank_blast — 프리팹 FX_Car_Explosion(2026-11-13, 바닥에 BlastFxScale 배 + 풀 · 폭발음), 비우면 코드 그림 폭발
+            // 카탈로그 tank_blast — 프리팹 FX_Explosion_Vehicle(2026-11-13, 바닥에 BlastFxScale 배 + 풀 · 폭발음), 비우면 코드 그림 폭발
             VehicleBlastFx.Play(FxIds.TankBlast, c + Vector3.up * 0.3f, ExplodeRadius, BlastFxScale, () => ProtoExplosion.Aftermath(c, ExplodeRadius));
             ProtoCameraFollow.Shake(ProtoCameraFollow.Impact.Heavy);   // 탱크 파괴
             var sd = ProtoSpawnDirector.I;
