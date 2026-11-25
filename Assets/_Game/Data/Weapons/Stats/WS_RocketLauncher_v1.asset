@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e162433af142f4e836fb0c68a6c092, type: 3}
+  m_Name: WS_RocketLauncher_v1
+  m_EditorClassIdentifier: 
+  mode: 2
+  damage: 50
+  interval: 1.7
+  range: 11
+  knockbackMult: 1.6
+  projectileSpeed: 14
+  projectileRadius: 0.45
+  projectileLife: 1.6
+  projectileSize: 0.34
+  projectileModel: {fileID: 919132149155446097, guid: 26bd2d3fe01e1b9469fe07ae163732e0,
+    type: 3}
+  projectileFacesTravel: 1
+  pierce: 0
+  tracerColor: {r: 1, g: 1, b: 1, a: 0}
+  tracerLength: 1
+  tracerWidth: 1
+  beam: 0
+  pellets: 5
+  spreadDegrees: 0
+  aoeRadius: 2.4
+  noShake: 0
+  airstrikeEvery: 0
+  airstrikeDamage: 260
+  coneDegrees: 50
+  burnDuration: 0
+  burnDps: 0
+  flameTint: {r: 1, g: 1, b: 1, a: 1}
+  fuelSeconds: 0
+  refuelSeconds: 2
+  fuelRegenPerSecond: 0.8
+  orbitRadius: 2.5
+  orbitCount: 2
+  orbitRpm: 42
+  orbitHitRadius: 0.55
+  orbitHeight: 0.8
+  companionOffset: {x: 0.85, y: 1.6, z: -0.5}
+  companionFollowLerp: 6
+  modelRotationOffset: {x: 0, y: 0, z: 0}
+  levelCounts: 0100000002000000030000000300000004000000
+  levelDamageMult:
+  - 1
+  - 1
+  - 1
+  - 1.5
+  - 1.5
+  levelRadiusMult:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  fx: {fileID: 11400000, guid: a7c9b6d1883e43c41a200cfc4c20341a, type: 2}
+  sfxKey: 
+  note: "\uC9C1\uC120 \uBE44\uD589, \uCC29\uD0C4 \uBC18\uACBD 2.4m \uD3ED\uBC1C.
+    \uD3ED\uBC1C\uC740 \uC9C1\uACA9 \uB300\uC0C1 \uD3EC\uD568 \uBC18\uACBD \uC548
+    \uC804\uCCB4\uC5D0 \uAC19\uC740 \uD53C\uD574."

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2871e2634e873c149b15f8002f5e26f0, type: 3}
+  m_Name: EvolutionTable
+  m_EditorClassIdentifier: 
+  entries:
+  - from: {fileID: 11400000, guid: 4046446a33f722b4fbf03258d7658361, type: 2}
+    to: {fileID: 11400000, guid: c0232a4d408d7d74180c58cdb4d8d747, type: 2}
+    blurb: "\uCD08\uACE0\uC18D \uC5F0\uC0AC \u2014 \uD0C4\uC774 \uC870\uAE08 \uD769\uC5B4\uC9C4\uB2E4"
+  - from: {fileID: 11400000, guid: 88c45495609011a4db5e11df9159b071, type: 2}
+    to: {fileID: 11400000, guid: b3bfa13dc9ee1f04ead1868d037b7d09, type: 2}
+    blurb: "\uC904\uC744 \uAFF0\uB6AB\uB294 \uBB34\uAC70\uC6B4 \uD55C \uBC1C (\uAD00\uD1B5
+      10)"
+  - from: {fileID: 11400000, guid: 776d75f53b787ac428eaeeaf93d6118a, type: 2}
+    to: {fileID: 11400000, guid: d50a3deb1fb62864284b9db29913e6dd, type: 2}
+    blurb: "\uB354 \uB113\uACE0 \uAE38\uAC8C, \uD654\uC0C1\uC774 \uC138\uB2E4"
+  - from: {fileID: 11400000, guid: 5895ec190419b344d9070067283bea2a, type: 2}
+    to: {fileID: 11400000, guid: 964e8318f17e61343a69f7e4c7c01bb7, type: 2}
+    blurb: "2.2\uCD08\uB9C8\uB2E4 \uD5EC\uAE30\uAC00 \uD654\uBA74 6\uC9C0\uC810\uC744
+      \uD3ED\uACA9"

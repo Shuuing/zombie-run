@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e162433af142f4e836fb0c68a6c092, type: 3}
+  m_Name: WS_SupportDrone
+  m_EditorClassIdentifier: 
+  mode: 5
+  damage: 8
+  interval: 0.5
+  range: 7
+  knockbackMult: 0.8
+  projectileSpeed: 22
+  projectileRadius: 0.45
+  projectileLife: 1.2
+  projectileSize: 0.18
+  projectileModel: {fileID: 1709254077376921, guid: 47b5661293919884fb4c33b1d84cae27, type: 3}
+  projectileFacesTravel: 1
+  pierce: 0
+  tracerColor: {r: 1, g: 1, b: 1, a: 0}
+  tracerLength: 1
+  tracerWidth: 1
+  beam: 0
+  pellets: 5
+  spreadDegrees: 0
+  aoeRadius: 0
+  noShake: 0
+  airstrikeEvery: 0
+  airstrikeDamage: 260
+  coneDegrees: 50
+  burnDuration: 0
+  burnDps: 0
+  flameTint: {r: 1, g: 1, b: 1, a: 1}
+  fuelSeconds: 0
+  refuelSeconds: 2
+  fuelRegenPerSecond: 0.8
+  orbitRadius: 2.5
+  orbitCount: 2
+  orbitRpm: 42
+  orbitHitRadius: 0.55
+  orbitHeight: 0.8
+  companionOffset: {x: 0.85, y: 1.6, z: -0.5}
+  companionFollowLerp: 6
+  modelRotationOffset: {x: -90, y: -90, z: 0}
+  levelCounts: 0100000002000000030000000300000004000000
+  levelDamageMult:
+  - 1
+  - 1
+  - 1
+  - 1.5
+  - 1.5
+  levelRadiusMult:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  fx: {fileID: 11400000, guid: cb70040c58f81c94dafba73c8bb4ec8f, type: 2}
+  sfxKey: 
+  note: "\uC18C\uD658\uBB3C 1\uAE30, \uBB34\uC801, \uB3C5\uB9BD \uC870\uC900. \uD50C\uB808\uC774\uC5B4\uB294
+    \uC870\uC900\uD558\uC9C0 \uC54A\uB294\uB2E4."

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b723020de7bb3ccfabc655a33b61d2f, type: 3}
+  m_Name: ULT_FlameRing
+  m_EditorClassIdentifier: 
+  displayName: '불꽃 고리'
+  color: {r: 1, g: 0.55, b: 0.15, a: 1}
+  note: '파이로 필사기(§06 v0.7). 화상 수치(지속·초당)는 주무기 WeaponStats 의 burn* 을 따른다. 갈래 B 연소 = 끝날 때 화상 걸린 적 전부 폭발(ult_combust).'
+  radius: 3.5
+  radiusA: 5
+  band: 1.4
+  duration: 8
+  durationII: 10
+  tick: 0.25
+  damageMul: 3
+  damageMulI: 3.5
+  combustMul: 12
+  combustSplash: 1.6
+  combustSplashMul: 4
+  combustFxMax: 14

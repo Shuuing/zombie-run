@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7939b28fa85f9744db7f93ac74f76cc9, type: 3}
+  m_Name: Flora_Original
+  m_EditorClassIdentifier: 
+  takenAt: 2026-11-12 15:21:52
+  swaps:
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1359316238
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-28435535
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-226518852
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6067280026813596915-66346135
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-275960325
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1432203027
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1056938155
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1886735077
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-621755072
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-2129156920
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1122758791
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1608102038
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-311920271
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-1732557129
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-79951111
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-1027405094
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-189630923
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-28399650
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-921491474
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-335418754
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1259055409
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-1362262085
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-312714313
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-192754304
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-210121551
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-396165
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-42984096
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1664572418
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1653042898
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-562425969
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-764831147
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1133391859
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-2112560239
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1944342052
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-540176132
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-720030486
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1156725806
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-618836034
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-134698311
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-379712154
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-496501662
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-1206196996
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-832223195
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-992729749
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1756660136
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-175774994
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-716695461
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-332794853
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1187859562
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-2089033632
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1230116025
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-421432791
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1368554089
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-1129742699
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-905657779
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-1627136967
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1662878136
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6067280026813596915-1012484455
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1790860494
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6067280026813596915-1363417870
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-11310137
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-653165972
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-238032616
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6067280026813596915-663582869
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-363772106
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1374228338
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-454723739
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-545579562
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1354655602
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-1913913739
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1565055422
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-2793364243118454616-1049728652
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-338903339
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-664439987
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-171457252
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-537440216
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-2043582123
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-1925376523
+  - name: Tree_Round_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1924624571
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-1238538692241297931-1087711017
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1823360887
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-869913748
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1245132352
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-1456130904
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-740616908
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6185145031201378763-868081976
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1497329036
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-1513649161
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-558210197
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5554654892693218074-666396334
+  - name: Tree_Spruce_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-433173960
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6067280026813596915-656996618
+  - name: Tree_Cone_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-2121678771
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7398156219902849625-2076207350
+  - name: Bush_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-733046019
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6490491346398155316-1648477115
+  - name: Bush_A_Test (1)
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-697517905
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-3443626255250016760-103306315
+  - name: Bush_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1875980183
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5522324907791894135-1722289453
+  - name: Bush_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-760839231
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-3443626255250016760-509038294
+  - name: Bush_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-2078224375
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-7295565647549083207-1919359676
+  - name: Bush_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-382339549
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-3443626255250016760-908690103
+  - name: Bush_A_Test (2)
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-87665231
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-5522324907791894135-273555514
+  - name: Bush_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-300577807
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-6490491346398155316-877391131
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-2046162111
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-2117317588
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-609825855
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-74824351
+  - name: Plant_A_Test (1)
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1057283886
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-1708852699
+  - name: Plant_A_Test (2)
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1954533941
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-236130126
+  - name: Plant_A_Test (3)
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-890511862
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-1834856523
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-346189991
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-1146441277
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1857079542
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-2040360625
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-467191102
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-1868724147
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-216499585
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-1874681340
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1778519386
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-24625808
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1434714928
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-319671529
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-577157578
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-1865346772
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1509420701
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8218204736594959539-1786317936
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-194418167
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-1436885229
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-1024021389
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-674419764
+  - name: Plant_A_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-488431311
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-812828584
+  - name: Plant_B_Test
+    original: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-919132149155446097-951927249
+    wasActive: 1
+    replacement: GlobalObjectId_V1-2-77296771ec2d41740b3811fd7c16b665-8826354705480561022-315250522

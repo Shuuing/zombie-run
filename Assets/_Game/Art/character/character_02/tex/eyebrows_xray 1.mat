@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: eyebrows_xray 1
+  m_Shader: {fileID: 4800000, guid: 66f7c950e38474248a6f77a4588e665c, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - BCM_OUTLINE
+  - BCM_OUTLINE_COLORMAP
+  - BCM_PLANAR_SHADOW_BLOB
+  - BCM_RAMP_COLOR
+  - BCM_RAMP_TRICOLOR
+  - TCP2_MATCAP
+  - TCP2_MATCAP_MASK
+  - TCP2_OUTLINE_CONST_SIZE
+  - TCP2_REFLECTIONS_FRESNEL
+  - TCP2_SHADOW_LIGHT_COLOR
+  - TCP2_UV_NORMALS_FULL
+  - _RECEIVE_SHADOWS_OFF
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2460
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: d54feaf78e53ebc46b0e6f67b633fbe9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 5b29453d2bc8b1146b1e82b2d53f2c7f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapChannelTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapMask:
+        m_Texture: {fileID: 2800000, guid: 8b2d8e924eeb75946a42924e1e9a104f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTex:
+        m_Texture: {fileID: 2800000, guid: 433af431d4f736f468d82fd7a9a395f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTexA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTexB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTexG:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatCapTexR:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MidColor0Map:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MultiplyMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineColorMap:
+        m_Texture: {fileID: 2800000, guid: 28bfd945125aa424092e7cd44233ca5a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlanarShadowRamp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 2800000, guid: 77ff5f007f41e7d40a2cdab1cf125fa9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowBaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _CastShadows: 0
+    - _Cull: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectIntensityOutline: 1
+    - _DstBlend: 10
+    - _EmissionChannel: 4
+    - _FresnelMax: 0
+    - _FresnelMin: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HighPercent: 100
+    - _IndirectIntensity: 0
+    - _IndirectIntensityOutline: 0
+    - _LightReceived: 100
+    - _MatCapMaskChannel: 0
+    - _MatCapPower: 1.37
+    - _MatCapPowerA: 1
+    - _MatCapPowerB: 1
+    - _MatCapPowerG: 1
+    - _MatCapPowerR: 1
+    - _MatCapType: 0
+    - _MatCapTypeA: 0
+    - _MatCapTypeB: 0
+    - _MatCapTypeG: 0
+    - _MatCapTypeR: 0
+    - _Metallic: 0
+    - _MidCount: 1
+    - _MidPct0: 26.1
+    - _MidPct1: 20
+    - _MidPct2: 20
+    - _MidPct3: 20
+    - _MidPct4: 20
+    - _MidPct5: 20
+    - _MidPercent: 0
+    - _Mode: 0
+    - _MultiplyMaskChannel: 0
+    - _MultiplyStrength: 1
+    - _NormalsSource: 0
+    - _NormalsUVType: 0
+    - _OcclusionChannel: 1
+    - _OcclusionDirect: 0
+    - _OcclusionRemapEnd: 1
+    - _OcclusionRemapStart: 0
+    - _OcclusionStrength: 0.139
+    - _OutlineLightingType: 0
+    - _OutlineLightingTypeURP: 0
+    - _OutlineMaskChannel: 0
+    - _OutlineMaskInvert: 0
+    - _OutlineMaxWidth: 1
+    - _OutlineMinWidth: 1
+    - _OutlinePixelSizeType: 1
+    - _OutlineTextureLOD: 1.57
+    - _OutlineTextureType: 0
+    - _OutlineWidth: 0.38
+    - _Parallax: 0.02
+    - _PlanarShadowBias: 0.01
+    - _PlanarShadowBlob: 1
+    - _PlanarShadowBlobHeight: 0.5
+    - _PlanarShadowFadeDistance: 1.5
+    - _PlanarShadowFadeMode: 1
+    - _PlanarShadowFalloff: 1.5
+    - _PlanarShadowGroundHeight: 0
+    - _PlanarShadowGroundMode: 1
+    - _PlanarShadowGrow: 0.02
+    - _PlanarShadowHeightFade: 0
+    - _PlanarShadowMaxOffset: 1.2
+    - _PlanarShadowRoundness: 0.35
+    - _PlanarShadowSoftness: 0.12
+    - _PlanarShadowStrength: 0.6
+    - _RampBands: 9
+    - _RampBandsSmoothing: 0.084
+    - _RampOffset: -0.2
+    - _RampScale: 1.31
+    - _RampSmoothing: 0.231
+    - _RampThreshold: 0.445
+    - _RampType: 5
+    - _ReceiveShadowSmoothing: 0
+    - _ReceiveShadowStrength: 1
+    - _ReceiveShadowsOff: 0
+    - _ReflectionMapType: 0
+    - _ReflectionSmoothness: 0.824
+    - _RenderingMode: 2
+    - _RimLightDir: 0.772
+    - _RimMax: 1.008
+    - _RimMax2: 0.212
+    - _RimMin: 1.171
+    - _RimMin2: 0.358
+    - _ShadowColorLightAtten: 1
+    - _ShadowPercent: 25.2
+    - _SingleIndirectColor: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularAlbedoTint: 0
+    - _SpecularHighlights: 1
+    - _SpecularMapType: 0
+    - _SpecularPreserveBrightness: 0
+    - _SpecularRoughness: 0.419
+    - _SpecularStrength: 1
+    - _SpecularToonSize: 0.113
+    - _SpecularToonSmoothness: 0
+    - _SpecularType: 0
+    - _SrcBlend: 5
+    - _StencilComp: 3
+    - _StencilPassOp: 0
+    - _StencilReadMask: 32
+    - _StencilRef: 32
+    - _StencilWriteMask: 0
+    - _StudEdgeSoftness: 0.02
+    - _StudFaceLevel: 0
+    - _StudMaskShrink: 0.08
+    - _StudPitch: 0.4545
+    - _StudRadius: 0.17
+    - _StudRootAO: 0.38
+    - _StudRootAOWidth: 0.12
+    - _StudShadowColorAmount: 0
+    - _StudShadowGrow: 0.02
+    - _StudShadowHeight: 0.131
+    - _StudShadowHeightScale: 1
+    - _StudShadowMaxOffset: 0.45
+    - _StudShadowSoftness: 0.06
+    - _StudShadowStrength: 0.65
+    - _UVSec: 0
+    - _UseAlphaTest: 0
+    - _UseEmission: 0
+    - _UseFresnelReflections: 1
+    - _UseMatCap: 1
+    - _UseMatCapChannel: 0
+    - _UseMatCapChannelA: 0
+    - _UseMatCapMask: 1
+    - _UseMobileMode: 0
+    - _UseMultiply: 0
+    - _UseNormalMap: 0
+    - _UseOcclusion: 0
+    - _UseOcclusionAdv: 0
+    - _UseOutline: 1
+    - _UseOutlineColorMap: 1
+    - _UseOutlineVColorMask: 0
+    - _UsePlanarShadow: 0
+    - _UsePlanarShadowRamp: 0
+    - _UseReflections: 0
+    - _UseRim: 0
+    - _UseRimDir: 0
+    - _UseRimLightMask: 0
+    - _UseShadowTexture: 0
+    - _UseSpecular: 0
+    - _UseStudShadow: 0
+    - _UseXRayPush: 0
+    - _XRayDepthPush: 0.01
+    - _XRayRole: 1
+    - _ZTest: 8
+    - _ZWrite: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.48235294}
+    - _Color: {r: 0.67295593, g: 0.1544835, b: 0.1544835, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightReceivedColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColor: {r: 0.099817894, g: 0.25144365, b: 0.64779866, a: 1}
+    - _MatCapColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColorB: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColorG: {r: 1, g: 1, b: 1, a: 1}
+    - _MatCapColorR: {r: 1, g: 1, b: 1, a: 1}
+    - _MidColor0: {r: 1, g: 0.83136356, b: 0.80817604, a: 1}
+    - _MidColor1: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _MidColor2: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _MidColor3: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _MidColor4: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _MidColor5: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _MultiplyColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OcclusionMapChannelMask: {r: 1, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 0.49056602, g: 0.15503736, b: 0.15503736, a: 1}
+    - _PlanarShadowBlobCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _PlanarShadowBlobSize: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _PlanarShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReceiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectionColor: {r: 0.50292397, g: 0, b: 1, a: 1}
+    - _RimColor: {r: 0.08647134, g: 0.031149792, b: 0.3962264, a: 0.5}
+    - _RimColor2: {r: 0.08627451, g: 0.03137255, b: 0.39607844, a: 0.5019608}
+    - _SColor: {r: 0.9607844, g: 0.64705884, b: 0.6039216, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StudCount: {r: 2, g: 2, b: 0, a: 0}
+    - _StudGridCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _StudShadowColor: {r: 0.34999996, g: 0.079999976, b: 0.049999982, a: 1}
+  m_BuildTextureStacks: []

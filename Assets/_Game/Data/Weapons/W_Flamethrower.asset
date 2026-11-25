@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb7244e935f5894f92c609bf56fb10d, type: 3}
+  m_Name: W_Flamethrower
+  m_EditorClassIdentifier: 
+  displayName: "\uD654\uC5FC\uBC29\uC0AC\uAE30 (\uD30C\uC774\uB85C)"
+  model: {fileID: 919132149155446097, guid: 68d3d5acc64ba5b439386e912bc16429, type: 3}
+  stats: {fileID: 11400000, guid: 79873f4a40c20084ab1797558f8a2520, type: 2}
+  mount: 0
+  weaponScale: 0.090277
+  gripPoint: {x: -0.04619275, y: -0.011412447, z: -0.06273746}
+  weaponEuler: {x: 2.3254845, y: 263.266, z: 252.63367}
+  hasMuzzle: 1
+  muzzlePoint: {x: -4.6100016, y: -0.044082157, z: 0.59491086}
+  calibrated: 1
+  note: "2026-09-30 Higgsfield+Tripo \uBAA8\uB378\uB85C \uAD50\uCCB4(Flame_thrower_02.fbx).
+    \uC61B \uAC12\uC740 W_Flamethrower_v1.asset. \uADF8\uB9BD \uAC12\uC740 \uC61B
+    \uBAA8\uB378 \uAC83\uC744 \uADF8\uB300\uB85C \u2014 \uC0C8 \uBAA8\uB378\uC740
+    \uC61B \uBC14\uC6B4\uC988\uC5D0 \uAE38\uC774\xB7\uC911\uC2EC\uC744 \uB9DE\uCDB0
+    \uBF51\uC558\uB2E4. \uC815\uBC00 \uBCF4\uC815\uC740 \uADF8\uB9BD \uD234\uB85C.
+    / \uC774\uC804 \uBA54\uBAA8: \uADF8\uB9BD \uBBF8\uC815. FBX \uB8E8\uD2B8\uC5D0
+    1.3677 \uC2A4\uCF00\uC77C\uC774 \uAD6C\uC6CC\uC838 \uC788\uB2E4 \u2014 \uB8E8\uD2B8
+    \uC2A4\uCF00\uC77C\uC744 1 \uB85C \uB36E\uC9C0 \uB9D0 \uAC83."

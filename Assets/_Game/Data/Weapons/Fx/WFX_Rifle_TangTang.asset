@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf7506b4a9603c40a650f4db0b88e53, type: 3}
+  m_Name: WFX_Rifle_TangTang
+  m_EditorClassIdentifier: 
+  muzzle:
+    fxId: FX_Rifle_Muzzle_Flashy
+    scale: 1.5
+  casingScale: 1
+  casingPortBack: 0.35
+  muzzleOffset: {x: 0, y: 0, z: 0}
+  hit:
+    fxId: FX_Rifle_Hit
+    scale: 1
+  kill:
+    fxId: fx_zombie_death
+    scale: 1
+  jet:
+    fxId: 
+    scale: 1
+  explode:
+    fxId: 
+    scale: 1
+  note: "\uB8E8\uD0A4 \uC18C\uCD1D \uC804\uC6A9 \uC138\uD2B8 (2026-11-04). rifle_muzzle
+    \xB7 rifle_hit \xB7 rifle_kill = Art/VFX/Weapons/Rifle \uC758 \uD15C\uD50C\uB9BF
+    \uD504\uB9AC\uD339 (FX_Rifle_Muzzle \xB7 FX_Rifle_Hit \xB7 FX_Rifle_Kill). \uD0C4\uD53C\uB294
+    \uCF54\uB4DC \uADF8\uB9BC(ProtoGunFx). \uC608\uAD11\uD0C4\uC740 WS_Rifle_TangTang
+    \uC758 tracer*. \uBAA8\uC591\uC744 \uBC14\uAFB8\uB824\uBA74 \uC2AC\uB86F\uC758
+    \uD504\uB9AC\uD339 \uCE78\uC5D0 \uC0C8 \uD504\uB9AC\uD339\uC744 \uB193\uB294\uB2E4
+    \u2014 ID \uB294 \uC800\uC808\uB85C \uBC14\uB010\uB2E4."

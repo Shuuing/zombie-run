@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9835157569dbc62d795750d48c47659c, type: 3}
+  m_Name: E_Ranged
+  m_EditorClassIdentifier: 
+  displayName: '원거리 좀비'
+  behaviour: 3
+  hp: 10
+  moveSpeed: 1.8
+  contactDamage: 0
+  contactRange: 0.85
+  contactCooldown: 0.8
+  xp: 3
+  scale: 1
+  bodyRadius: 0
+  knockback: 1
+  separationWeight: 1
+  deathLinger: 2.9
+  skin: {fileID: 0}
+  unlockAt: 0
+  chance: 0.2
+  maxAlive: 8
+  ranged:
+    stopRange: 8
+    chaseRange: 9.5
+    cooldown: 3.2
+    release: 1.2
+    castTime: 2.5
+    boltSpeed: 6.5
+    boltDamage: 9
+  bite:
+    delay: 0.3
+    slowMult: 0.55
+    slowTime: 1.5
+  gas:
+    enabled: 1
+    triggerRange: 1.1
+    fuseTime: 0.45
+    radius: 1.8
+    burstDamage: 10
+    tickDamage: 4
+    tickInterval: 0.7
+    life: 3
+  note: '프로토(2026-10-08). 멀찍이 서서 독 구슬. 붙어도 때리지 않는다(contactDamage 0). stopRange 4.5 는 다가오는 동안 다 맞아 죽어 8 로(10-12). 사망 클립 2.97s.'

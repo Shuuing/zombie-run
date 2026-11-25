@@ -1,0 +1,773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046f39dd182f2e346b9ec107904f7f65, type: 3}
+  m_Name: FxCatalog
+  m_EditorClassIdentifier: 
+  entries:
+  - id: boss_windup_dust
+    note: "\uC138\uB9AC\uBA38\uB2C8\xB7\uBCF4\uC2A4 1\uCEF7 \uC900\uBE44 \u2014 \uBC1C\uBC11
+      \uBA3C\uC9C0"
+    prefab: {fileID: 1709254077376921, guid: b2085698475a6884cae9751deb46b740, type: 3}
+    builtin: boss_windup_dust
+    onTop: 0
+    lifetime: 2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: boss_hammer_flames
+    note: "\uBCF4\uC2A4 1\uCEF7 \uC900\uBE44 \u2014 \uB9DD\uCE58\uC5D0 \uBD88 (\uC2A4\uD32C,
+      \uC18C\uCF13 HammerHead)"
+    prefab: {fileID: 0}
+    builtin: boss_hammer_flames
+    onTop: 0
+    lifetime: 0
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: boss_hammer_trail
+    note: "\uBCF4\uC2A4 2\uCEF7 \uD718\uB450\uB974\uAE30 \u2014 \uADA4\uC801 (\uC2A4\uD32C,
+      \uC18C\uCF13 HammerHead)"
+    prefab: {fileID: 1709254077376921, guid: ebd85153261b41c458e22fedd9966675, type: 3}
+    builtin: boss_hammer_trail
+    onTop: 0
+    lifetime: 0
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: boss_impact
+    note: "\uBCF4\uC2A4 3\xB74\uCEF7 \uCDA9\uB3CC \u2014 \uC12C\uAD11\xB7\uD654\uAD6C\xB7\uB9C1\xB7\uD30C\uD3B8\xB7\uADE0\uC5F4\xB7\uC5F0\uAE30.
+      \uD754\uB4E4\uB9BC\xB7\uC18C\uB9AC \uD3EC\uD568 (Target \uC575\uCEE4, \uBC18\uACBD
+      = \uD310\uC815)"
+    prefab: {fileID: 1709254077376921, guid: ef5389a45d0411440a7c5f3b57600ef0, type: 3}
+    builtin: boss_impact
+    onTop: 0
+    lifetime: 3
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: explosion
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uB85C\uCF13 \uCC29\uD0C4 \uD3ED\uBC1C. \uB9C1
+      \uD14C\uB450\uB9AC = \uD310\uC815 \uBC18\uACBD(\xA715)"
+    prefab: {fileID: 0}
+    builtin: explosion
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: levelup_beam
+    note: "\uC138\uB9AC\uBA38\uB2C8 \u2014 \uB808\uBCA8\uC5C5 \uBE5B\uAE30\uB465"
+    prefab: {fileID: 0}
+    builtin: levelup_beam
+    onTop: 0
+    lifetime: 2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: swap_landing
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uCE90\uB9AD\uD130 \uAD50\uCCB4 \uCC29\uC9C0
+      \uBA3C\uC9C0 (\uD504\uB9AC\uD339 \uC608\uC2DC)"
+    prefab: {fileID: 8671284117658210734, guid: ee985d863fa6f144a8af2c5aa462941a,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: flame_jet
+    note: "\uBB34\uAE30 \u2014 \uD654\uC5FC \uBD84\uC0AC (\uD504\uB9AC\uD339 \uC608\uC2DC,
+      \uC2A4\uD32C\uC73C\uB85C \uCF1C\uACE0 \uB048\uB2E4)"
+    prefab: {fileID: 3844919720774826175, guid: 83e069acaea72ba44a74d541f52363e0,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: burn_body
+    note: "\uC815\uBCF4 \u2014 \uD654\uC0C1 \uC911 \uD45C\uC2DC (\uD504\uB9AC\uD339
+      \uC608\uC2DC, \uC2A4\uD32C)"
+    prefab: {fileID: 6458140322953518754, guid: 8a2d3c4a8b9b103469cec19aabf7290e,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: muzzle_flash
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uCD1D\uAD6C \uD654\uC5FC. \uC790\uB9AC = \uCD1D\uAD6C,
+      +Z = \uCD1D\uC5F4 \uBC29\uD5A5, scale 1 = \uC18C\uCD1D(\uCE90\uB17C 1.35 \xB7
+      \uC0F7\uAC74 1.25 \xB7 \uD544\uC0AC\uAE30 \uB354 \uD07C, big). \uCE90\uB17C\uC740
+      \uCD08\uB2F9 12\uBC1C \u2014 \uC218\uBA85 0.1 \xB7 \uB3D9\uC2DC 8. \uD15C\uD50C\uB9BF:
+      Art/VFX/FX_MuzzleFlash"
+    prefab: {fileID: 0}
+    builtin: muzzle_flash
+    onTop: 1
+    lifetime: 0.1
+    poolSize: 8
+    maxAlive: 8
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: hit_spark
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uD53C\uACA9 \uBD88\uB625. \uC790\uB9AC = \uB9DE\uC740
+      \uBAB8\uD1B5(\uAC00\uC2B4 \uB192\uC774\uC758 \uB9DE\uC740 \uCABD), +Z = \uCD1D\uC54C\uC774
+      \uB0A0\uC544\uC628 \uCABD(\uD280\uB294 \uBC29\uD5A5), scale = \uB369\uCE58(\uCE58\uBA85\uD0C0
+      \xD71.5, big). \uD770 \uD50C\uB798\uC2DC\xB7\uC18C\uB9AC\uB294 \uCF54\uB4DC(ProtoConfig.HitFlash*).
+      90\uB9C8\uB9AC \uBB3C\uB7C9\uC804 \u2014 \uB3D9\uC2DC 20"
+    prefab: {fileID: 4862996491896982112, guid: a4f8e399b3e695b44add40b88618c673,
+      type: 3}
+    builtin: 
+    onTop: 1
+    lifetime: 0.4
+    poolSize: 24
+    maxAlive: 20
+    clock: 0
+    previewOffset: {x: 0, y: 0.95, z: 0}
+  - id: kill_burst
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uCC98\uCE58 \uD130\uC9D0. \uC790\uB9AC = \uBAB8
+      \uAC00\uC6B4\uB370, scale = \uB369\uCE58, big = \uBCF4\uC2A4\xB7\uC5D8\uB9AC\uD2B8.
+      \uC0AC\uB9DD \uC560\uB2C8\xB7\uC18C\uB9AC(zdie)\uB294 \uCF54\uB4DC"
+    prefab: {fileID: 7987885876363657689, guid: 456b8ed015ae36d49bd6769a576dab37,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.8
+    poolSize: 12
+    maxAlive: 12
+    clock: 0
+    previewOffset: {x: 0, y: 0.8, z: 0}
+  - id: gem_pickup
+    note: "\uBCF4\uC0C1 \u2014 \uC82C \uD761\uC218 \uC21C\uAC04. \uC790\uB9AC = \uC82C,
+      scale = \uC82C \uB4F1\uAE09(\uC791\uC74C 0.8 \xB7 \uC911\uAC04 1 \xB7 \uD07C
+      1.4). \uC18C\uB9AC(gem \uC0AC\uB2E4\uB9AC)\uB294 \uCF54\uB4DC"
+    prefab: {fileID: 2294179790538079454, guid: 56babb57101a8b34db8d2e3f23937eaa,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.6
+    poolSize: 12
+    maxAlive: 12
+    clock: 0
+    previewOffset: {x: 0, y: 0.35, z: 0}
+  - id: evolve_beam
+    note: "\uC138\uB9AC\uBA38\uB2C8 \u2014 \uC9C4\uD654 \uBE5B\uAE30\uB465(\uAE08\uC0C9,
+      color \uB85C \uB118\uC5B4\uC628\uB2E4). \uC790\uB9AC = \uCE90\uB9AD\uD130 \uBC1C"
+    prefab: {fileID: 0}
+    builtin: evolve_beam
+    onTop: 0
+    lifetime: 2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: van_hit
+    note: "\uD658\uACBD \u2014 \uC2B9\uD569\uCC28 \uD53C\uACA9 \uBD88\uB625. \uC790\uB9AC
+      = \uB9DE\uC740 \uC790\uB9AC(\uB192\uC774 0.6~1.4), +Z = \uC704"
+    prefab: {fileID: 0}
+    builtin: van_hit
+    onTop: 0
+    lifetime: 0.3
+    poolSize: 8
+    maxAlive: 8
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: van_blast
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD658\uACBD \u2014 \uC2B9\uD569\uCC28 \uD3ED\uBC1C. \uD504\uB9AC\uD339
+      FX_Car_Explosion(2026-11-13). ProtoDestructibles \uAC00 VehicleBlastFx \uB85C
+      \uBD80\uB978\uB2E4: \uC790\uB9AC = \uCC28 \uC911\uC2EC \uBC14\uB2E5, scale
+      = BlastFxScale 1. \uD754\uB4E4\uB9BC(Huge) \xB7 \uD3ED\uBC1C\uC74C \xB7 \uD480\uC740
+      \uCF54\uB4DC(ProtoBossFx.ImpactFeel)\uAC00 \uB0B8\uB2E4. \uBE44\uC6B0\uBA74
+      \uC608\uC804 \uCF54\uB4DC \uADF8\uB9BC(van_blast)"
+    prefab: {fileID: 1709254077376921, guid: 5d656d0da96a52246ab01a4fa43b973f, type: 3}
+    builtin: van_blast
+    onTop: 1
+    lifetime: 1.5
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: van_appear_dust
+    note: "\uD658\uACBD \u2014 \uC2B9\uD569\uCC28 \uC7AC\uC0DD\uC131 \uBA3C\uC9C0.
+      \uC790\uB9AC = \uCC28 \uC911\uC2EC"
+    prefab: {fileID: 0}
+    builtin: van_appear_dust
+    onTop: 0
+    lifetime: 1.5
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: heli_crash_pop
+    note: "\uD658\uACBD \u2014 \uCD94\uB77D \uD5EC\uAE30\uC758 \uC791\uC740 \uD3ED\uBC1C(\uC5D4\uC9C4
+      \uD53C\uACA9 1.1 \xB7 \uC794\uD574 1.6). radius, quiet(\uD754\uB4E4\uB9BC \uC5C6\uC74C)"
+    prefab: {fileID: 0}
+    builtin: heli_crash_pop
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 6
+    maxAlive: 6
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: heli_crash_impact
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD658\uACBD \u2014 \uD5EC\uAE30 \uCD94\uB77D \uCDA9\uB3CC. \uD504\uB9AC\uD339
+      FX_Car_Explosion(2026-11-13). ProtoHeliCrash \uAC00 VehicleBlastFx \uB85C \uBD80\uB978\uB2E4:
+      \uC790\uB9AC = \uCDA9\uB3CC \uC9C0\uC810 \uBC14\uB2E5, scale = BlastFxScale
+      1.1. \uD754\uB4E4\uB9BC(Huge) \xB7 \uD3ED\uBC1C\uC74C \xB7 \uD480\uC740 \uCF54\uB4DC(ProtoBossFx.ImpactFeel)\uAC00
+      \uB0B8\uB2E4. \uBE44\uC6B0\uBA74 \uC608\uC804 \uCF54\uB4DC \uADF8\uB9BC(heli_crash_impact)"
+    prefab: {fileID: 1709254077376921, guid: 5d656d0da96a52246ab01a4fa43b973f, type: 3}
+    builtin: heli_crash_impact
+    onTop: 1
+    lifetime: 1.5
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: tank_blast
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD0C8\uAC83 \u2014 \uD0F1\uD06C \uD30C\uAD34 \uD3ED\uBC1C. \uD504\uB9AC\uD339
+      FX_Car_Explosion(2026-11-13). ProtoTank \uAC00 VehicleBlastFx \uB85C \uBD80\uB978\uB2E4:
+      \uC790\uB9AC = \uD0F1\uD06C \uBC14\uB2E5, scale = BlastFxScale 0.85. \uD3ED\uBC1C\uC74C
+      \xB7 \uD480\uC740 \uCF54\uB4DC(ProtoExplosion.Aftermath), \uD754\uB4E4\uB9BC(Heavy)\uC740
+      \uCF54\uB4DC\uAC00 \uB530\uB85C. \uBE44\uC6B0\uBA74 \uC608\uC804 \uCF54\uB4DC
+      \uADF8\uB9BC(tank_blast)"
+    prefab: {fileID: 1709254077376921, guid: 5d656d0da96a52246ab01a4fa43b973f, type: 3}
+    builtin: tank_blast
+    onTop: 1
+    lifetime: 1.5
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: tank_debris_pop
+    note: "\uD0C8\uAC83 \u2014 \uD0F1\uD06C \uC794\uD574 \uC791\uC740 \uD3ED\uBC1C(1.4m,
+      2\uD68C)"
+    prefab: {fileID: 0}
+    builtin: tank_debris_pop
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 4
+    maxAlive: 4
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: ult_combust
+    note: "\uD544\uC0AC\uAE30 \u2014 \uD30C\uC774\uB85C \uC5F0\uC18C. \uD654\uC0C1
+      \uC801\uB9C8\uB2E4 radius \uD3ED\uBC1C, \uCCAB \uBC1C\uB9CC \uD754\uB4E4\uB9BC(quiet
+      \uB85C \uB118\uC5B4\uC628\uB2E4)"
+    prefab: {fileID: 0}
+    builtin: ult_combust
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 8
+    maxAlive: 8
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: rifle_muzzle
+    note: "\uBB34\uAE30\xB7\uC18C\uCD1D \u2014 \uCD1D\uAD6C: \uC2EC\xB74\uAC08\uB798
+      \uBCC4\xB7\uBD88\uC904\uAE30\xB7\uBD88\uB625\xB7\uC5F0\uAE30. \uC790\uB9AC
+      = \uCD1D\uAD6C, +Z = \uCD1D\uC5F4, scale 1 = \uC18C\uCD1D. \uC5F0\uAE30\uAC00
+      0.5s \uB0A8\uC544 \uC218\uBA85 0.55. \uD3F4\uBC31 = \uACF5\uD1B5 \uCF54\uB4DC
+      \uADF8\uB9BC. \uD15C\uD50C\uB9BF: Art/VFX/Weapons/Rifle/FX_Rifle_Muzzle | \uBAA8\uC591
+      = Survivor Ace \uC6D0\uC791 arrow_white(Assets/_Reference/SurvivorAce, 11-13
+      \uC0AC\uC6A9\uC790 \"\uC6D0\uC791 \uAC83\uC73C\uB85C\") \u2014 \uD770 \uAC00\uC2DC
+      \uC12C\uAD11 + \uBE5B, \uB8E8\uD2B8 0.43(\uC6D0\uC791 \uD654\uBA74 \uBE44\uC728)"
+    prefab: {fileID: 1709254077376921, guid: 80fe2a1692bfe0f4383d489598513151, type: 3}
+    builtin: rifle_muzzle
+    onTop: 1
+    lifetime: 0.47
+    poolSize: 6
+    maxAlive: 6
+    clock: 0
+    previewOffset: {x: 0, y: 1.1, z: 0.45}
+  - id: rifle_hit
+    note: "\uBB34\uAE30\xB7\uC18C\uCD1D \u2014 \uD53C\uACA9 \uBD88\uB625 + \uBA3C\uC9C0
+      \uD55C \uBB49\uCE58. \uC790\uB9AC = \uCC29\uD0C4\uC810, +Z = \uCD1D\uC54C\uC774
+      \uC628 \uCABD, scale = \uB369\uCE58(\uCE58\uBA85\uD0C0 \xD71.5). \uBB3C\uB7C9\uC804
+      \u2014 \uB3D9\uC2DC 20. \uD15C\uD50C\uB9BF: FX_Rifle_Hit | \uBAA8\uC591 = Survivor
+      Ace \uC6D0\uC791 Hitted_Machine_Small(Assets/_Reference/SurvivorAce, 11-13)
+      \u2014 \uC6D0\uC791\uC740 \uB450 \uAC08\uB798 \uB2E4 \uAEBC\uC838 \uC788\uC5B4
+      stg_blast_Hit_01(\uD770\u2192\uB178\uB791 \uAC00\uC2DC \uBCC4 + \uD30C\uD3B8)\uB9CC
+      \uCF30\uB2E4, \uB8E8\uD2B8 0.43"
+    prefab: {fileID: 1709254077376921, guid: 57a36df10135d23438025b7af58522da, type: 3}
+    builtin: 
+    onTop: 1
+    lifetime: 0.9
+    poolSize: 24
+    maxAlive: 20
+    clock: 0
+    previewOffset: {x: 0, y: 0.95, z: 0}
+  - id: rifle_kill
+    note: "\uBB34\uAE30\xB7\uC18C\uCD1D \u2014 \uCC98\uCE58: \uC12C\uAD11\xB7\uBC14\uB2E5
+      \uB9C1\xB7\uD30C\uD3B8\xB7\uBC18\uC9DD\uC784, \uC608\uAD11\uD0C4 \uB178\uB791.
+      \uC790\uB9AC = \uBAB8 \uAC00\uC6B4\uB370, scale = \uB369\uCE58. \uD15C\uD50C\uB9BF:
+      FX_Rifle_Kill"
+    prefab: {fileID: 6444787400234050155, guid: 226c09aa52efe264c981461c8bf21f74,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.8
+    poolSize: 8
+    maxAlive: 10
+    clock: 0
+    previewOffset: {x: 0, y: 0.8, z: 0}
+  - id: zombie_gore
+    note: "\uD0C0\uACA9\uAC10 \u2014 \uCC98\uCE58 \uD53C \uD130\uC9D0(\uD54F\uBC29\uC6B8
+      \xB7 \uD54F\uB369\uC774 \xB7 \uC548\uAC1C \xB7 \uBC14\uB2E5 \uD53C 3.5\uCD08).
+      \uC790\uB9AC = \uBAB8 \uAC00\uC6B4\uB370, +Z = \uB9DE\uC740 \uBC29\uD5A5, scale
+      = \uB369\uCE58. \uBAB8 \uC870\uAC01\uC740 \uCF54\uB4DC \uADF8\uB9BC(ZombieGibs
+      \u2014 [\uBB34\uAE30] \uD0ED \uD30C\uD3B8 \uC904). \uBCF4\uC2A4\xB7\uBD88\uD0C0
+      \uC8FD\uC740 \uC801\uC740 \uC548 \uB0B8\uB2E4"
+    prefab: {fileID: 7105271381184864304, guid: a6c284e3f3a6cf848b2ffbb0be025bb9,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 2.6
+    poolSize: 16
+    maxAlive: 16
+    clock: 0
+    previewOffset: {x: 0, y: 0.8, z: 0}
+  - id: inferno_jet
+    note: "\uBB34\uAE30\xB7\uC778\uD398\uB974\uB178(\uD654\uC5FC\uBC29\uC0AC\uAE30
+      \uC9C4\uD654) \u2014 \uD654\uC5FC \uC904\uAE30(\uC2A4\uD32C, ProtoFlamePack
+      \uC774 \uC138\uD2B8 jet \uC2AC\uB86F\uC73C\uB85C \uC138\uC6B4\uB2E4). \uBAA8\uC591
+      = \uCEE8\uC149 \uC544\uD2B8\uB97C \uD30C\uD2F0\uD074\uB85C(InfernoFlameSetup,
+      \uC2DC\uD2B8 \uC560\uB2C8 \uC5C6\uC74C)"
+    prefab: {fileID: 5361825589255959609, guid: cf81262d319599e49bb2b7438dd47f6d,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 1
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 1.1, z: 0.45}
+  - id: poison_gas_cloud
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uB7EC\uB108 \uB3C5\uAC00\uC2A4 \uAD6C\uB984(\uC2A4\uD32C) \u2014
+      ProtoPoisonGas \uAC00 \uBD80\uB978\uB2E4. \uC790\uB9AC = \uBC14\uB2E5, scale
+      = \uD310\uC815 \uBC18\uACBD(m) \u2192 \uD504\uB9AC\uD339 \uB8E8\uD2B8 2.0(\uBC30\uC728
+      1 \uC2E4\uCE21 \uBC18\uACBD 0.5m). \uD504\uB9AC\uD339\uC774 \uC788\uC73C\uBA74
+      \uCF54\uB4DC \uD37C\uD504\uB97C \uC228\uAE30\uACE0 \uBC14\uB2E5 \uC6D0(\uD310\uC815)\xB7\uC12C\uAD11\uC740
+      \uB0A8\uAE34\uB2E4"
+    prefab: {fileID: 1709254077376921, guid: c14266779de7aba4f8646042a7371541, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 4
+    maxAlive: 8
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: poison_bolt
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC6D0\uAC70\uB9AC \uC880\uBE44 \uB3C5 \uAD6C\uC2AC(\uC2A4\uD32C,
+      \uAD6C\uC2AC\uC744 \uB530\uB77C\uAC00\uBA70 \uB098\uB294 \uCABD\uC744 \uBCF8\uB2E4)
+      \u2014 ProtoEnemyBolt \uAC00 \uBD80\uB978\uB2E4. \uCD08\uB85D \uD63C\uBD88\uD0C4(Bullet_HUNHUO_Green
+      \u2014 \uD0D5\uD0D5 Bullet_HUNHUO \uB97C \uCD08\uB85D\uC73C\uB85C \uC0C9 \uBC14\uAFBC
+      \uBCF5\uC0AC\uBCF8, 11-12 \uC0AC\uC6A9\uC790 \"\uAF2C\uB9AC \uB2EC\uB9B0 \uB9C8\uBC95
+      \uB290\uB08C\"). scale 1 \u2192 \uB8E8\uD2B8 0.45(\uD574\uACE8 \uC9C0\uB984
+      \uC57D 0.36m), \uAF2C\uB9AC TrailRenderer 2\uAC1C 0.3\uCD08(\uC57D 2m)\xB7\uAD75\uAE30
+      1.125/0.9m(\uD2B8\uB808\uC77C\uC740 \uBC30\uC728\uC744 \uC548 \uD0C4\uB2E4).
+      \uD504\uB9AC\uD339\uC774 \uC788\uC73C\uBA74 \uCF54\uB4DC \uAD6C\uC2AC\xB7\uAF2C\uB9AC\uB97C
+      \uC228\uAE34\uB2E4. \uB9DE\uD798 \uBC18\uACBD 0.42m \uB294 \uADF8\uB300\uB85C"
+    prefab: {fileID: 1709254077376921, guid: 63aec58f87874bb097cde80b290fec74, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 8
+    maxAlive: 16
+    clock: 0
+    previewOffset: {x: 0, y: 0.9, z: 0}
+  - id: poison_bolt_hit
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC6D0\uAC70\uB9AC \uC880\uBE44 \uB3C5 \uAD6C\uC2AC\uC774 \uB9DE\uAC70\uB098
+      \uB9C9\uD790 \uB54C \uC810\uC561 \uD290 \u2014 ProtoEnemyBolt.Pop \uC774 \uBD80\uB978\uB2E4.
+      \uC790\uB9AC = \uAD6C\uC2AC \uC704\uCE58, scale 1 \u2192 \uB8E8\uD2B8 0.275(\uAD6C\uC2AC\uACFC
+      \uAC19\uC774 \uBC18)"
+    prefab: {fileID: 1709254077376921, guid: ce79bb2cd7b15f640bade023470d6aa0, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.8
+    poolSize: 8
+    maxAlive: 12
+    clock: 0
+    previewOffset: {x: 0, y: 0.9, z: 0}
+  - id: player_poison_hit
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD50C\uB808\uC774\uC5B4 \uB3C5 \uD53C\uACA9 \u2014 \uC6D0\uAC70\uB9AC
+      \uC880\uBE44 \uD63C\uBD88\uD0C4\uC5D0 \uB9DE\uC73C\uBA74 ProtoPlayer.TakeDamage(Poison)
+      \uC774 \uBD80\uB978\uB2E4. \uC790\uB9AC = \uD50C\uB808\uC774\uC5B4 \uAC00\uC2B4(\uB85C\uCEEC
+      \uC704 1.3m), \uB530\uB77C\uB2E4\uB2D8, scale 1. \uD0D5\uD0D5 Fx_Drug_Circle(\uCD08\uB85D
+      \uC12C\uAD11 \xB7 \uC810\uC561 \uBC29\uC6B8 \xB7 \uC5F0\uAE30) \u2014 2\uCD08\uB9C8\uB2E4
+      \uB2E4\uC2DC \uD130\uC9C0\uB358 \uBC18\uBCF5\uC744 \uB044\uACE0 \uB8E8\uD2B8
+      0.7"
+    prefab: {fileID: 1709254077376921, guid: 77249c8f56e6d20488a914ad7aaa805e, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 2
+    maxAlive: 3
+    clock: 0
+    previewOffset: {x: 0, y: 1.3, z: 0}
+  - id: zombie_claw_hit
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC880\uBE44 \uD3C9\uD0C0(\uD560\uD034\uAE30)\uC5D0 \uB9DE\uC74C
+      \u2014 \uC6CC\uCEE4 \xB7 \uB7EC\uB108 \xB7 \uC5D8\uB9AC\uD2B8 \xB7 \uC911\uAC04
+      \uBCF4\uC2A4\uC758 \uC811\uCD09 \uACF5\uACA9\uC774 ProtoPlayer.TakeDamage(Claw)
+      \uB85C \uBD80\uB978\uB2E4(\uAC1C \uBB3C\uAE30\uB294 \uC544\uB2D8). \uC790\uB9AC
+      = \uD50C\uB808\uC774\uC5B4 \uAC00\uC2B4(\uB85C\uCEEC \uC704 1.3m), \uB530\uB77C\uB2E4\uB2D8,
+      scale 1. \uD0D5\uD0D5 \uB291\uB300 \uBC1C\uD1B1 \uACF5\uACA9(Bullet_BeastGirlActive_WolfClawAttack
+      \u2014 \uAC80\uBD89\uC740 \uBC1C\uD1B1 \uC790\uAD6D 3\xD73 \uD50C\uB9BD\uBD81
+      0.3\uCD08 + \uACE0\uB9AC + \uC5B4\uB450\uC6B4 \uBC88\uC9D0), \uBE48 \uB8E8\uD2B8
+      \uC2DC\uC2A4\uD15C\uC758 5\uCD08 \uBC18\uBCF5\uC744 \uB044\uACE0 \uB8E8\uD2B8
+      0.8. \uBAB8 \uC548\uCABD\uC5D0 \uB098\uC640 \uAC00\uB824\uC9C0\uBBC0\uB85C
+      \uD56D\uC0C1 \uC704\uC5D0(onTop). \uC218\uBA85 0.5\uCD08"
+    prefab: {fileID: 1709254077376921, guid: e5b017a258824bb4da2e2737646dc45f, type: 3}
+    builtin: 
+    onTop: 1
+    lifetime: 0.5
+    poolSize: 4
+    maxAlive: 6
+    clock: 0
+    previewOffset: {x: 0, y: 1.3, z: 0}
+  - id: boss_telegraph
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uBCF4\uC2A4 \uBC14\uB2E5 \uC608\uACE0 \uC6D0 \uAC15\uC870(\uC2A4\uD32C)
+      \u2014 ProtoBossFx.ShowTelegraph \uAC00 \uBD80\uB978\uB2E4. \uC790\uB9AC =
+      \uCDA9\uB3CC \uC9C0\uC810, scale = \uD310\uC815 \uBC18\uACBD(m) \u2192 \uB8E8\uD2B8
+      0.66(\uC2E4\uCE21 \uBC18\uACBD 1.52m). \uCF54\uB4DC \uD14C\uB450\uB9AC\xB7\uCC44\uC6C0\uC740
+      \uADF8\uB300\uB85C \uB450\uACE0 \uC704\uC5D0 \uC5B9\uB294\uB2E4"
+    prefab: {fileID: 1709254077376921, guid: 64c0b5b0e7fc7374cbc644dc01121399, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0
+    poolSize: 2
+    maxAlive: 4
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: boss_spawn
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uBCF4\uC2A4 \uB4F1\uC7A5 \uD45C\uC2DC \u2014 ProtoSpawnDirector.SpawnBoss(\uC911\uAC04\xB7\uCD5C\uC885)
+      \uAC00 \uBD80\uB978\uB2E4. \uC790\uB9AC = \uBCF4\uC2A4 \uBC1C\uBC11, scale
+      = \uBCF4\uC2A4 \uB369\uCE58 \u2192 \uB8E8\uD2B8 1.0"
+    prefab: {fileID: 1709254077376921, guid: 8694800ec9a260b4dbe1c1460246587d, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 2
+    poolSize: 2
+    maxAlive: 2
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: hit_blood
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD53C\uACA9 \uD53C \uD280\uAE40 \u2014 ProtoZombie.DealDamage
+      \uAC00 hit_spark \uC640 \uAC19\uC740 \uC790\uB9AC\xB7\uBC29\uD5A5\uC73C\uB85C
+      \uBD80\uB978\uB2E4(\uD070 \uD55C \uBC29 \uC81C\uC678). scale = \uB369\uCE58(\uCE58\uBA85\uD0C0
+      \xD71.5) \u2192 \uB8E8\uD2B8 0.3"
+    prefab: {fileID: 1709254077376921, guid: 995b6d32a415cde4e89aa2ffaa292c6f, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 12
+    maxAlive: 20
+    clock: 0
+    previewOffset: {x: 0, y: 0.95, z: 0}
+  - id: char_swap_appear
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC138\uB9AC\uBA38\uB2C8 \u2014 \uCE90\uB9AD\uD130 \uAD50\uCCB4
+      \uB4F1\uC7A5(MFX_ChuanSong_Appear \uB178\uB780 \uBCF5\uC0AC\uBCF8). ProtoCharacterSwitcher
+      \uAC00 \uAD50\uCCB4 \uC2DC\uC791 \uC21C\uAC04 \uBD80\uB978\uB2E4. \uC790\uB9AC
+      = \uD50C\uB808\uC774\uC5B4 \uBC1C\uBC11, \uB530\uB77C\uB2E4\uB2D8, scale 1.
+      \uD504\uB9AC\uD339\uC744 \uBE44\uC6B0\uBA74 \uC608\uC804 \uD558\uB298 \uBC88\uAC1C\uB85C
+      \uB3CC\uC544\uAC04\uB2E4"
+    prefab: {fileID: 1709254077376921, guid: 5c1e7a0d3b9f4e62a8d4c71f0e2b6a93, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 2
+    maxAlive: 2
+    clock: 1
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: weapon_change_appear
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC138\uB9AC\uBA38\uB2C8 \u2014 \uBB34\uAE30 \uAD50\uCCB4(\uC9C4\uD654)
+      \uB4F1\uC7A5(MFX_ChuanSong_Appear \uB178\uB780 \uBCF5\uC0AC\uBCF8). ProtoEvolution.Evolve
+      \uAC00 \uBD80\uB978\uB2E4. \uC790\uB9AC = \uD50C\uB808\uC774\uC5B4 \uBC1C\uBC11,
+      \uB530\uB77C\uB2E4\uB2D8, scale 1. \uD504\uB9AC\uD339\uC744 \uBE44\uC6B0\uBA74
+      \uC608\uC804 \uC9C4\uD654 \uBE5B\uAE30\uB465(evolve_beam)\uC73C\uB85C \uB3CC\uC544\uAC04\uB2E4"
+    prefab: {fileID: 1709254077376921, guid: 5c1e7a0d3b9f4e62a8d4c71f0e2b6a93, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 2
+    maxAlive: 2
+    clock: 1
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: fx_zombie_death
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD0C0\uACA9\uAC10 \u2014 \uC880\uBE44 \uCC98\uCE58 \uACF5\uD1B5
+      \uD3ED\uBC1C(\uD504\uB9AC\uD339 fx_zombie_death = \uC6B4\uC11D \uD3ED\uBC1C,
+      \uB8E8\uD2B8 0.8). ProtoZombie.Die(\uBAA8\uB4E0 \uC801 \u2014 \uBCF4\uC2A4
+      \xB7 \uC5D8\uB9AC\uD2B8 \xB7 \uBD88\uD0C0 \uC8FD\uC740 \uC801 \uD3EC\uD568)
+      \xB7 FxWeaponStage.Kill \uC774 \uBD80\uB978\uB2E4. \uC790\uB9AC = \uBAB8 \uAC00\uC6B4\uB370,
+      scale = \uBAB8 \uB192\uC774 / \uC6CC\uCEE4 \uD0A4 1.72m. \uBB34\uAE30 \uCC98\uCE58
+      \uD6A8\uACFC(kill \uC2AC\uB86F \xB7 kill_burst) \xB7 \uBAB8 \uC870\uAC01 \xB7
+      \uD53C(zombie_gore)\uC640 \uAC19\uC774 \uB09C\uB2E4. \uBE44\uC6B0\uBA74 \uC774\uAC83\uB9CC
+      \uBE60\uC9C4\uB2E4"
+    prefab: {fileID: 1709254077376921, guid: 1c110920e5c042d4dba8b39cfdc2d754, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.5
+    poolSize: 12
+    maxAlive: 12
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: FX_Rifle_Hit
+    note: "\uD504\uB9AC\uD339\uC744 \uB04C\uC5B4\uB2E4 \uB193\uC544 \uC0DD\uAE34
+      \uD56D\uBAA9. \uC5B4\uB290 \uCE35(\uC815\uBCF4 / \uD0C0\uACA9\uAC10 / \uC138\uB9AC\uBA38\uB2C8
+      / \uBD84\uC704\uAE30)\uC774\uACE0 \uC790\uB9AC \uADDC\uC57D\uC774 \uBB34\uC5C7\uC778\uC9C0
+      \uC801\uC5B4 \uB458 \uAC83."
+    prefab: {fileID: 7700093843233778059, guid: 2867aa731738b1a4d8e4a8297bbc4a10,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 5.2
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: FX_Rifle_Muzzle
+    note: "\uD504\uB9AC\uD339\uC744 \uB04C\uC5B4\uB2E4 \uB193\uC544 \uC0DD\uAE34
+      \uD56D\uBAA9. \uC5B4\uB290 \uCE35(\uC815\uBCF4 / \uD0C0\uACA9\uAC10 / \uC138\uB9AC\uBA38\uB2C8
+      / \uBD84\uC704\uAE30)\uC774\uACE0 \uC790\uB9AC \uADDC\uC57D\uC774 \uBB34\uC5C7\uC778\uC9C0
+      \uC801\uC5B4 \uB458 \uAC83."
+    prefab: {fileID: 8685530910185941199, guid: 1b056082a0ab3ef4c924ad5e7f031616,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 6
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: FX_Rifle_Muzzle_Flashy
+    note: "[2026-11-18] \uB8E8\uD0A4 \uC18C\uCD1D \uCD1D\uAD6C \u2014 \uD654\uB824\uD55C
+      \uD310. \uC0AC\uC6A9\uC790 \uD504\uB9AC\uD339 FX_Rifle_TangTang_Muzzle(\uC6D0\uBFD4\xB7\uAC00\uC6B4\uB370\xB7\uC5F0\uAE30)
+      \uBCF5\uC0AC\uBCF8\uC5D0 \uD770 \uC911\uC2EC \uC12C\uAD11\xB7\uB178\uB791 \uBCC4\xB7\uD770
+      \uBC18\uC9DD \uBCC4\xB7\uC591\uC606 \uBD88\uAF43\xB7\uC55E\uC73C\uB85C \uBD88\uB625
+      \uCE35\uC744 \uB354\uD568(Flashy \uBB36\uC74C). \uC790\uB9AC = \uCD1D\uAD6C,
+      +Z = \uC3D8\uB294 \uBC29\uD5A5, \uC2AC\uB86F \uD06C\uAE30 1.5 \uAE30\uC900.
+      \uC608\uC804 \uBAA8\uC591\uC73C\uB85C \uB418\uB3CC\uB9AC\uB824\uBA74 \uC18C\uCD1D
+      \uCD1D\uAD6C \uCE78\uC744 FX_Rifle_Muzzle \uB85C"
+    prefab: {fileID: 8685530910185941199, guid: 43c8bc0fc0bb7df4b877cc35f1ba5214,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: FX_Rifle_TangTang_Hit_2
+    note: "\uD504\uB9AC\uD339\uC744 \uB04C\uC5B4\uB2E4 \uB193\uC544 \uC0DD\uAE34
+      \uD56D\uBAA9. \uC5B4\uB290 \uCE35(\uC815\uBCF4 / \uD0C0\uACA9\uAC10 / \uC138\uB9AC\uBA38\uB2C8
+      / \uBD84\uC704\uAE30)\uC774\uACE0 \uC790\uB9AC \uADDC\uC57D\uC774 \uBB34\uC5C7\uC778\uC9C0
+      \uC801\uC5B4 \uB458 \uAC83."
+    prefab: {fileID: 1148662896666887476, guid: fd2e5e5f22bec8849b1aeb08dd8211be,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 5.4
+    poolSize: 4
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: ult_fire_ring
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uC7AC\uB8CC \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uC138\uB9AC\uBA38\uB2C8 \u2014 \uD30C\uC774\uB85C \uD544\uC0AC\uAE30
+      \uBD88\uAF43 \uACE0\uB9AC(\uC2A4\uD32C). ProtoUltimate.Pyro \uAC00 \uD544\uC0AC\uAE30
+      \uB3D9\uC548 \uCF1C \uB450\uACE0 \uB9E4 \uD504\uB808\uC784 \uD50C\uB808\uC774\uC5B4
+      \uBC1C\uBC11\uC73C\uB85C \uC62E\uAE34\uB2E4(\uD68C\uC804 \uC5C6\uC74C). \uD504\uB9AC\uD339\uC740
+      \uBC18\uC9C0\uB984 2.5m, \uD310\uC815 \uBC18\uACBD(3.5 / \uAC08\uB798 A 5m)\uC5D0
+      \uB9DE\uCDB0 \uC6D0 \uB458\uB808\uB9CC \uB113\uD78C\uB2E4(FitRing). \uB05D\uB098\uBA74
+      \uBC29\uCD9C\uC744 \uBA48\uCD94\uACE0 lifetime \uB4A4 \uD68C\uC218. \uBE44\uC6B0\uBA74
+      \uADF8\uB9BC \uC5C6\uC774 \uD310\uC815\uB9CC"
+    prefab: {fileID: 2618089373879006037, guid: e63566b428dd3324681bf85084ce5e60,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.2
+    poolSize: 1
+    maxAlive: 1
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: ult_target_kill_bullet
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uC7AC\uB8CC \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uB8E8\uD0A4 \uD544\uC0AC\uAE30 \uD45C\uC801 \uC0AC\uC0B4 \uD0C4(\uC2A4\uD32C).
+      ProtoUltimate.Fly \uAC00 \uD45C\uC801\uB9C8\uB2E4 \uD558\uB098 \uB0B4\uC11C
+      \uAC00\uC2B4 \uB192\uC774\uB85C \uB0A0\uB824 \uBCF4\uB0B4\uACE0(+Z = \uB098\uB294
+      \uCABD, \uD45C\uC801\uC744 \uB530\uB77C \uAEBE\uC784) \uBAB8 \uD45C\uBA74\uC5D0
+      \uB2FF\uC73C\uBA74 \uD53C\uD574 + \uD788\uD2B8(ult_target_kill_hit)\uC640 \uD568\uAED8
+      \uB05D \u2014 \uBA38\uB9AC(\uB85C\uCEEC \uD30C\uD2F0\uD074)\uB294 \uBC14\uB85C
+      \uC9C0\uC6B0\uACE0 \uC6D4\uB4DC \uAF2C\uB9AC\xB7\uBD88\uD2F0\uB9CC \uC0AC\uADF8\uB77C\uB4E0\uB2E4(lifetime
+      0.4 \uB4A4 \uD68C\uC218). \uD504\uB9AC\uD339 = SA MFX_ChongJiBo_Bullet \uBCF5\uC0AC\uBCF8
+      \uC190\uC9C8(\uD68C\uC0C9 \uC5F0\uAE30 \uACE0\uB9AC\xB7\uB8EC \uAE00\uC790
+      \uB054, \uAC00\uC2DC \uB215\uD798), \uB8E8\uD2B8 0.6. \uBE44\uC6B0\uBA74 \uC608\uC804
+      \uAE08\uC0C9 \uC120(ProtoBeamFx) + \uC989\uBC1C \uD53C\uD574"
+    prefab: {fileID: 1709254077376921, guid: b1d517643145a78499dff4cc11cf2b0c, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.4
+    poolSize: 8
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: ult_target_kill_hit
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uC7AC\uB8CC \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uB8E8\uD0A4 \uD544\uC0AC\uAE30 \uD45C\uC801 \uC0AC\uC0B4 \uD0C4\uC774
+      \uB9DE\uB294 \uC21C\uAC04(\uC6D0\uC0F7). ProtoUltimate.Fly \uAC00 \uBAB8 \uD45C\uBA74(\uC3DC
+      \uCABD, \uAC00\uC2B4 \uB192\uC774)\uC5D0 \uB0B8\uB2E4, +Z = \uC3DC \uC0AC\uB78C
+      \uCABD. \uD0C4\uC740 \uADF8 \uC790\uB9AC\uC5D0\uC11C \uC0AC\uB77C\uC9C4\uB2E4.
+      \uD504\uB9AC\uD339 = SA MFX_LuoLei_Hit_Golden(\uAE08\uBE5B \uB099\uB8B0 \uD788\uD2B8)
+      \uBCF5\uC0AC\uBCF8, \uB8E8\uD2B8 0.6, \uC2DC\uC791 \uC9C0\uC5F0 0.05 \uB2F9\uAE40(\uD0C4\uC774
+      \uC0AC\uB77C\uC9C4 \uB4A4 \uBE48\uD2C8 \uC5C6\uAC8C). \uBE44\uC6B0\uBA74 \uAE30\uBCF8
+      \uBD88\uB625\uB9CC"
+    prefab: {fileID: 1709254077376921, guid: a2c930ae4b090ff4e9a4dccaff28813f, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.1
+    poolSize: 8
+    maxAlive: 0
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: intro_landing
+    note: "\uC138\uB9AC\uBA38\uB2C8 \u2014 \uC2DC\uC791 \uC5F0\uCD9C \uB099\uD558\uC0B0
+      \uCC29\uC9C0(2026-11-16): Survivor Ace \uBCF4\uC2A4 \uB099\uD558 \uC5F0\uAE30
+      \uBCF5\uC0AC\uBCF8(MFX_Landing_Smoke \u2014 \uB9CC\uD654\uD48D \uC5F0\uAE30
+      \uBB49\uCE58\uAC00 \uD130\uC838 \uACE0\uB9AC\uB85C \uD37C\uC9D0 \xB7 \uBE5B
+      \xB7 \uC18D\uB3C4\uC120, \uD478\uB978 \uD770 \uD68C\uC0C9, 0.6\uCD08, \uC784\uC2DC
+      \u2014 \uCD9C\uC2DC \uC804 \uAD50\uCCB4). \uC790\uB9AC = \uCC29\uC9C0 \uC9C0\uC810(\uBC14\uB2E5),
+      scale 1 = \uCE90\uB9AD\uD130. \uD754\uB4E4\uB9BC \xB7 \uCC0C\uADF8\uB7EC\uC9D0
+      \xB7 \uC18C\uB9AC(land)\uB294 ProtoIntro. \uBE44\uC6B0\uBA74 \uC608\uC804 \uAD50\uCCB4
+      \uCC29\uC9C0 \uBA3C\uC9C0(FX_SwapLanding). \uC6B0\uB9AC \uD15C\uD50C\uB9BF:
+      Art/VFX/FX_IntroLanding"
+    prefab: {fileID: 1709254077376921, guid: a52ac973221d4319b41e8b1a8b681d29, type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1.4
+    poolSize: 1
+    maxAlive: 1
+    clock: 0
+    previewOffset: {x: 0, y: 0, z: 0}
+  - id: tank_cannon_hit
+    note: "[\uC784\uC2DC\xB7Survivor Ace \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uD0C8\uAC83 \u2014 \uD0F1\uD06C \uB300\uD3EC \uCC29\uD0C4 \uD3ED\uBC1C(2026-11-17,
+      \uD504\uB9AC\uD339 FX_Death_XiaoGuai_002 = \uC6D0\uC791 \uC774\uD399\uD2B8
+      \uD45C 210008 \uC77C\uBC18 \uD3ED\uBC1C, \uB8E8\uD2B8 1). ProtoTank \uAC00
+      \uD0F1\uD06C \uD3EC \uC5F0\uCD9C \uC138\uD2B8\uC758 explode \uC2AC\uB86F\uC5D0
+      \uAF42\uACE0 ProtoProjectile.Explode \uAC00 \uB0B8\uB2E4: \uC790\uB9AC = \uD3EC\uD0C4\uC774
+      \uD130\uC9C4 \uC810(\uB300\uAC1C \uC880\uBE44 \uBAB8\uD1B5 0.9m), scale = ProtoTank.CannonHitFxScale
+      1, radius 2.6 \uC740 \uD504\uB9AC\uD339\uC774 \uC548 \uC4F4\uB2E4(scale 1 \uC5D0\uC11C
+      \uC12C\uAD11 \xB7 \uBD88\uB369\uC774\uAC00 \uD310\uC815 \uBC18\uACBD \uC6D0\uACFC
+      \uAC70\uC758 \uAC19\uB2E4). \uD3ED\uBC1C\uC74C \xB7 \uD480 \uB215\uD798\uC740
+      \uCF54\uB4DC(ProtoExplosion.Aftermath), \uD754\uB4E4\uB9BC\uC740 \uC6D0\uB798
+      \uC5C6\uC74C(quiet). \uD56D\uC0C1 \uC704\uC5D0 \u2014 \uD070 \uBE5B \uD310\uC774
+      \uB545\uC5D0 \uAC78\uB824 \uC798\uB9B0\uB2E4. \uBE44\uC6B0\uBA74 \uC608\uC804
+      \uACF5\uC6A9 \uCC29\uD0C4 \uD3ED\uBC1C \uCF54\uB4DC \uADF8\uB9BC"
+    prefab: {fileID: 1709254077376921, guid: 5b5bdbe0952d3a247b331632cfd1445c, type: 3}
+    builtin: tank_cannon_hit
+    onTop: 1
+    lifetime: 0.9
+    poolSize: 4
+    maxAlive: 6
+    clock: 0
+    previewOffset: {x: 0, y: 0.9, z: 0}
+  - id: gem_sparkle
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uBCF4\uC0C1 \u2014 \uB5A8\uC5B4\uC9C4 \uBB3C\uACE0\uAE30 \uC82C
+      \uB458\uB808 \uBC18\uC9DD\uC774(\uC2A4\uD32C, 2026-11-18). \uD504\uB9AC\uD339
+      FX_FishSparkle = \uD0D5\uD0D5 \uB4DC\uB86D \uC544\uC774\uD15C \uC5F0\uCD9C
+      FX_DiaoLuo_Color \uC758 \uBCC4 \uBC18\uC9DD\uC784\uB9CC(\uAE5C\uBE61\uC774\uBA70
+      \uC0B4\uC9DD \uC19F\uB294 \uBCC4 \u2014 11-18 \uC624\uD6C4 \uD06C\uAE30 \xD70.6
+      \xB7 \uB178\uB791~\uAE08 \uB450 \uAC08\uB798 \uC0C9). ProtoGemPool \uC774 \uB5A8\uC5B4\uC9C8
+      \uB54C \uCF1C\uACE0 \uB9E4 \uD504\uB808\uC784 \uBB3C\uACE0\uAE30\uB97C \uB530\uB77C
+      \uC62E\uAE30\uBA70(MoveTo), \uC790\uC11D\uC5D0 \uAC78\uB9AC\uBA74 Stop. scale
+      = \uC82C \uB4F1\uAE09(0.8 \xB7 1 \xB7 1.4). \uBB3C\uACE0\uAE30\uAC00 \uC218\uC2ED
+      \uB9C8\uB9AC\uB77C \uB3D9\uC2DC 64"
+    prefab: {fileID: 5268214120233283593, guid: 8f3c1349bae12c84888590ec1a0a9974,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1
+    poolSize: 40
+    maxAlive: 64
+    clock: 0
+    previewOffset: {x: 0, y: 0.35, z: 0}
+  - id: gem_trail
+    note: "[\uC784\uC2DC\xB7\uD0D5\uD0D5 \uCD94\uCD9C\uBCF8 \u2014 \uCD9C\uC2DC \uC804
+      \uAD50\uCCB4] \uBCF4\uC0C1 \u2014 \uC790\uC11D\uC5D0 \uB04C\uB824\uC624\uB294
+      \uBB3C\uACE0\uAE30 \uC82C \uAF2C\uB9AC(\uC2A4\uD32C, 2026-11-18). \uD504\uB9AC\uD339
+      FX_FishTrail = \uD0D5\uD0D5 \uC5BC\uC74C \uBD88\uC0AC\uC870 \uD654\uC0B4 Bullet_WhistleArrowIcePhoenix
+      \uC758 \uAF2C\uB9AC \uB760(\uAC00\uC0B0, 0.3\uCD08) + \uBB3C\uBC29\uC6B8 \uC810
+      \u2014 11-18 \uC624\uD6C4 \uB178\uB780 \uD14D\uC2A4\uCC98 \uBCF5\uC0AC\uBCF8(_Gold,
+      \uC0C9\uC0C1 210\xB0\u219247\xB0). \uB760\uB294 \uBA38\uB9AC(\uBB3C\uACE0\uAE30
+      \uCABD)\uB97C \uAC00\uB298\uACE0 \uD22C\uBA85\uD558\uAC8C \uC2DC\uC791\uD574
+      \uBB3C\uACE0\uAE30 \uB4A4\uC5D0\uC11C \uD37C\uC9C4\uB2E4(\uC798\uB9B0 \uB2E8\uBA74
+      \uC5C6\uC570). ProtoGemPool \uC774 \uC790\uC11D\uC5D0 \uAC78\uB9B4 \uB54C \uCF1C\uACE0(\uAF2C\uB9AC
+      \uBE44\uC6C0 \xB7 \uAD75\uAE30 = \uBB3C\uACE0\uAE30 \uD0A4 \xD7 trailWidthPerHeight)
+      \uB530\uB77C \uC62E\uAE30\uB2E4 \uBA39\uD788\uBA74 \uBC29\uCD9C\uC744 \uB044\uACE0
+      Stop(detach). scale = \uC82C \uB4F1\uAE09"
+    prefab: {fileID: 8371175263393643390, guid: 2f71d3fe040c84f4b8445e45854c1a31,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 1
+    poolSize: 24
+    maxAlive: 48
+    clock: 0
+    previewOffset: {x: 0, y: 0.7, z: 0}
+  - id: orbit_blade_trail
+    note: "\uBB34\uAE30\xB7\uD68C\uC804 \uBE14\uB808\uC774\uB4DC \u2014 \uD1B1\uB0A0
+      \uAF2C\uB9AC(\uC2A4\uD32C, 2026-11-18 \uC0AC\uC6A9\uC790 \"\uD68C\uC804 \uD1B1\uB2C8\uC5D0
+      \uADA4\uC801 \uC774\uD399\uD2B8\"). \uD504\uB9AC\uD339 FX_OrbitBlade_Trail
+      = \uC6B0\uB9AC \uADF8\uB9BC(OrbitBladeTrailSetup \uC774 \uAD7D\uB294\uB2E4):
+      \uD558\uB298\uC0C9 \uBE5B \uB760(0.26\uCD08 \u2248 \uADA4\uB3C4 66\xB0, \uD3ED
+      0.4m \u2014 11-19 0.95 \u2192 0.6 \u2192 0.4m \uB85C \uC587\uAC8C) + \uD770
+      \uC2EC \uB760(0.17\uCD08 \xB7 0.12m) + \uD14C\uB450\uB9AC \uC1F3\uBD88\uB625.
+      ProtoSupportGear \uAC00 \uD1B1\uB0A0\uB9C8\uB2E4 \uD53C\uBC97(+Z = \uADA4\uB3C4
+      \uC811\uC120)\uC5D0 \uCF1C\uACE0, \uB760 \uCE35(Custom \uACF5\uAC04)\uC744
+      \uADA4\uB3C4 \uB8E8\uD2B8\uC5D0 \uBB36\uC5B4 \uD50C\uB808\uC774\uC5B4\uAC00
+      \uB2EC\uB824\uB3C4 \uC6D0\uC744 \uADF8\uB9B0\uB2E4(BindSimulationSpace). \uB808\uBCA8\uC5C5\uC73C\uB85C
+      \uD1B1\uB0A0\uC744 \uB2E4\uC2DC \uB9CC\uB4E4\uBA74 Kill \uD6C4 \uB2E4\uC2DC
+      \uCF20\uB2E4. scale = WFX_OrbitBlade.trail.scale"
+    prefab: {fileID: 6438347916011582308, guid: 8977095106b6a2d4589553bb56acec69,
+      type: 3}
+    builtin: 
+    onTop: 0
+    lifetime: 0.5
+    poolSize: 6
+    maxAlive: 12
+    clock: 0
+    previewOffset: {x: 0, y: 0.8, z: 0}
+  upgrade: 3

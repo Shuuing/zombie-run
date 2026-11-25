@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b3c461491877ee1ab1ee6be02c2f86, type: 3}
+  m_Name: ULT_Barrage
+  m_EditorClassIdentifier: 
+  displayName: '광란 난사'
+  color: {r: 1, g: 0.78, b: 0.35, a: 1}
+  note: '브레이커 필사기(§06 v0.7, 10-29). 미스 포춘 궁처럼 부채꼴에 산탄을 쏟아붓는다. 마무리는 소리·흔들림만 있고 폭발 그림이 아직 없다.'
+  duration: 3
+  durationII: 4
+  gap: 0.06
+  pellets: 9
+  sweep: 14
+  aimRange: 10
+  spread: 70
+  spreadA: 110
+  spreadB: 35
+  pierceB: 3
+  damageMul: 1
+  damageMulI: 1.3
+  finalePellets: 30
+  finaleDamageMul: 1.5
+  finaleFlash: 2.6
+  bigFlashEvery3: 1.8
+  projectileSpeed: 24
+  projectileLife: 0.42
+  knockbackMult: 0.8
+  tracerLength: 1.6
+  tracerWidthMul: 1.4
+  tracerColor: {r: 1, g: 0.78, b: 0.35, a: 1}

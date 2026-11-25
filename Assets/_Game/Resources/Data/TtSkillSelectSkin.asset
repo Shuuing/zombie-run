@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6b3d520f57494aa1d35f61fd38497b, type: 3}
+  m_Name: TtSkillSelectSkin
+  m_EditorClassIdentifier: 
+  useThisPopup: 1
+  style: 1
+  popupPrefab: {fileID: 558407249072321112, guid: e0198433351de084ca79f71b1af3965f, type: 3}
+  showIcons: 1
+  bluePanel: {fileID: 21300000, guid: 173dd8e2a14972448a3e57bc187a29e6, type: 3}
+  yellowPanel: {fileID: 21300000, guid: d3e2cce62df5559478caf0e078f03733, type: 3}
+  entries:
+  - id: dmg
+    icon: {fileID: 21300000, guid: 05e55bce57134bd786c9aa240bdf23e2, type: 3}
+    weapon: 0
+    color: {r: 1.00, g: 0.50, b: 0.24, a: 1}
+  - id: rate
+    icon: {fileID: 21300000, guid: 743c3a8108034ff58fb588c6f84f8a6c, type: 3}
+    weapon: 0
+    color: {r: 0.98, g: 0.90, b: 0.25, a: 1}
+  - id: move
+    icon: {fileID: 21300000, guid: 139aba71805e4f2785a7d971b28398d9, type: 3}
+    weapon: 0
+    color: {r: 0.30, g: 0.90, b: 0.78, a: 1}
+  - id: hp
+    icon: {fileID: 21300000, guid: 29d9c86861574cac8e41e2192f933a07, type: 3}
+    weapon: 0
+    color: {r: 0.52, g: 0.48, b: 1.00, a: 1}
+  - id: magnet
+    icon: {fileID: 21300000, guid: 5e2477517d6142ecbe8561aa52e7c3af, type: 3}
+    weapon: 0
+    color: {r: 0.30, g: 0.82, b: 1.00, a: 1}
+  - id: crit
+    icon: {fileID: 21300000, guid: 67445448029e452e9cd9fbd5813ab196, type: 3}
+    weapon: 0
+    color: {r: 1.00, g: 0.30, b: 0.36, a: 1}
+  - id: heal
+    icon: {fileID: 21300000, guid: 9b16012db09a445193283d75c1d222b7, type: 3}
+    weapon: 0
+    color: {r: 0.35, g: 0.86, b: 0.45, a: 1}
+  - id: rifle
+    icon: {fileID: 21300000, guid: 7da490c255cd41ddb05252ea3bcb0f45, type: 3}
+    weapon: 1
+    color: {r: 1.00, g: 0.72, b: 0.18, a: 1}
+  - id: gear_orbit
+    icon: {fileID: 21300000, guid: 0673293509b64425b769156b46a84fa6, type: 3}
+    weapon: 1
+    color: {r: 1.00, g: 0.48, b: 0.80, a: 1}
+  - id: gear_drone
+    icon: {fileID: 21300000, guid: 857777b454ff47b6a3c41280baeb4a70, type: 3}
+    weapon: 1
+    color: {r: 0.40, g: 0.62, b: 1.00, a: 1}
+  - id: gear_grenade
+    icon: {fileID: 21300000, guid: bc25a8d593764376a53a12289f5f92f7, type: 3}
+    weapon: 1
+    color: {r: 0.62, g: 0.90, b: 0.25, a: 1}
+  - id: gear_heli
+    icon: {fileID: 21300000, guid: 824dd9f7d29e43fd8d0d6ceed484095e, type: 3}
+    weapon: 1
+    color: {r: 0.75, g: 0.48, b: 1.00, a: 1}

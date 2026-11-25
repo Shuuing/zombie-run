@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685decfdafc17e1f652d6b40be84ea96, type: 3}
+  m_Name: ULT_TargetKill
+  m_EditorClassIdentifier: 
+  displayName: '표적 사살'
+  color: {r: 1, g: 0.82, b: 0.32, a: 1}
+  note: '루키 필사기(§06 v0.7). 화면 안 적을 보스 → 엘리트 → 체력 순으로 고른다. 갈래 A 제압 = 8체, 갈래 B 저격 = 1체 × 3. 강화 II 파편은 판정만 있고 그림이 아직 없다.'
+  targets: 5
+  targetsA: 8
+  targetsB: 1
+  markTime: 0.35
+  shotGap: 0.07
+  damageMul: 25
+  damageMulI: 30
+  snipeMul: 3
+  shrapnelRadius: 1.5
+  shrapnelMul: 5

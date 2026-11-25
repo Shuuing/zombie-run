@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8e3ffed02b02625240ae0b11fbd8c, type: 3}
+  m_Name: C_02_Breaker
+  m_EditorClassIdentifier: 
+  displayName: '브레이커'
+  prefab: {fileID: 6062138191130286754, guid: 361b6ccc3d3641544994badff5650a56, type: 3}
+  bodyMaterial: {fileID: 2100000, guid: 76cc8428d3b6882409a75bb171093b8e, type: 2}
+  weapon: {fileID: 11400000, guid: 88c45495609011a4db5e11df9159b071, type: 2}
+  ultimate: {fileID: 11400000, guid: a6d4bdbf133823fe8eab5cc1e0ce2c3d, type: 2}
+  note: '근접 기동. 산탄총 → 진화 슬러그 레일.'

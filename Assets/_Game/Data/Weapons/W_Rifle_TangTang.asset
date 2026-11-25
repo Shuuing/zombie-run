@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb7244e935f5894f92c609bf56fb10d, type: 3}
+  m_Name: W_Rifle_TangTang
+  m_EditorClassIdentifier: 
+  displayName: "\uD0D5\uD0D5 \uC18C\uCD1D (\uB8E8\uD0A4)"
+  model: {fileID: 919132149155446097, guid: 28d74dd973b1a5a41a74a0a3148c360a, type: 3}
+  stats: {fileID: 11400000, guid: 3775e5599fe31894593c2d40897f88d2, type: 2}
+  mount: 0
+  weaponScale: 0.090277
+  gripPoint: {x: 0.81936496, y: -0.3112851, z: -0.21033978}
+  weaponEuler: {x: 2.3254845, y: 263.266, z: 252.63367}
+  hasMuzzle: 1
+  muzzlePoint: {x: -2.9700005, y: -0.4251407, z: 0.59873366}
+  calibrated: 1
+  note: "2026-09-30 Higgsfield+Tripo \uBAA8\uB378\uB85C \uAD50\uCCB4(rifle_02.fbx).
+    \uC61B \uAC12\uC740 W_Rifle_TangTang_v1.asset. \uADF8\uB9BD \uAC12\uC740 \uC61B
+    \uBAA8\uB378 \uAC83\uC744 \uADF8\uB300\uB85C \u2014 \uC0C8 \uBAA8\uB378\uC740
+    \uC61B \uBC14\uC6B4\uC988\uC5D0 \uAE38\uC774\xB7\uC911\uC2EC\uC744 \uB9DE\uCDB0
+    \uBF51\uC558\uB2E4. \uC815\uBC00 \uBCF4\uC815\uC740 \uADF8\uB9BD \uD234\uB85C.
+    / \uC774\uC804 \uBA54\uBAA8: \uC18C\uCD1D 1\uC885 \uC2DC\uC808 WeaponSocket \uC5D0
+    \uBC15\uD600 \uC788\uB358 \uAC12\uC744 \uADF8\uB300\uB85C \uC62E\uACBC\uB2E4.
+    \uC0AC\uC6A9\uC790\uAC00 \uC52C\uC5D0\uC11C \uB9DE\uCD98 \uAC12(\uC655\uBCF5
+    \uC624\uCC28 0)."

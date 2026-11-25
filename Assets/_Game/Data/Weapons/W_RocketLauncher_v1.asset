@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb7244e935f5894f92c609bf56fb10d, type: 3}
+  m_Name: W_RocketLauncher_v1
+  m_EditorClassIdentifier: 
+  displayName: "\uB85C\uCF13 \uBC1C\uC0AC\uAE30 (\uB370\uBAB0\uB9AC\uC154)"
+  model: {fileID: 919132149155446097, guid: 2843f30b52a808e48a148df189f4ce4a, type: 3}
+  stats: {fileID: 11400000, guid: 8eb14c5e2b01c144584d9fdccee00297, type: 2}
+  mount: 0
+  weaponScale: 0.090277
+  gripPoint: {x: 0.5920382, y: -0.14963223, z: 0.0010117216}
+  weaponEuler: {x: 2.269989, y: 255.812, z: 260.77655}
+  calibrated: 1
+  note: "\uADF8\uB9BD \uBBF8\uC815. \uB8E8\uD2B8 \uC2A4\uCF00\uC77C 1.1056. \uC784\uBCA0\uB514\uB4DC
+    \uBA38\uD2F0\uB9AC\uC5BC \uC774\uB984\uB9CC \uB2E4\uB978 \uBC30\uCE58(texture_pbr_20250901)\uC600\uACE0
+    UV \uB294 weapon_01 \uC544\uD2C0\uB77C\uC2A4\uC640 \uB9DE\uB2E4."

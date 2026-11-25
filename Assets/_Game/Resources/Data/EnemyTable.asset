@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a2ae1f81f82cd4db3f7ae006781c51, type: 3}
+  m_Name: EnemyTable
+  m_EditorClassIdentifier: 
+  walker: {fileID: 11400000, guid: a950a9c37887144efb77b8b12fde228d, type: 2}
+  runner: {fileID: 11400000, guid: 581c9c7e601ddc142e4ee1d9f3333d02, type: 2}
+  ranged: {fileID: 11400000, guid: d15f20b5c666fc0090cd019f46507519, type: 2}
+  dog: {fileID: 11400000, guid: abcc75202b32962f49b2d5fb55cc660c, type: 2}
+  elite: {fileID: 11400000, guid: 34138951aaaa032884594adc6154404e, type: 2}
+  midBoss: {fileID: 11400000, guid: 2ff3377a92940b3d1b07268b3d6b2b93, type: 2}
+  finalBoss: {fileID: 11400000, guid: cf89a00760ddab0b5dc83b03a7a6032a, type: 2}
+  midBossAt: 150
+  finalBossAt: 240
+  finalBossAfterMid: 15
+  finalGatherTime: 1
+  hordeWarnLead: 2
+  rushAt: 90
+  rushCount: 53
+  rushSpeed: 3.4
+  ringAt: 195
+  ringCount: 54
+  ringRadius: 9
+  eliteSpawnTimes:
+  - 65
+  - 205
+  eliteWarnLead: 2
+  eliteFleeShowAt: 60

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb7244e935f5894f92c609bf56fb10d, type: 3}
+  m_Name: W_OrbitBlade_v1
+  m_EditorClassIdentifier: 
+  displayName: "\uD68C\uC804 \uBE14\uB808\uC774\uB4DC (\uB9AC\uD37C)"
+  model: {fileID: 919132149155446097, guid: 17ef15a54f8627441913b82cf0133110, type: 3}
+  stats: {fileID: 11400000, guid: bbd931591f4b37940bb8bb17cc8b52ec, type: 2}
+  mount: 1
+  weaponScale: 0.090277
+  gripPoint: {x: 0, y: 0, z: 0}
+  weaponEuler: {x: 0, y: 0, z: 0}
+  calibrated: 0
+  note: "\uC784\uC2DC \uBAA8\uB378(\uBE14\uB80C\uB354 \uC0DD\uC131, ArtSource/blender/make_placeholder_weapons.py).
+    \uD1B1\uB0A0 \uB514\uC2A4\uD06C 228 tri. \uC190\uC5D0 \uC950\uC9C0 \uC54A\uB294\uB2E4
+    \u2014 2.5m \uADA4\uB3C4\uB97C \uB7F0\uD0C0\uC784\uC774 \uB3CC\uB9B0\uB2E4. \uB514\uC2A4\uD06C\uB294
+    \uC218\uD3C9(\uBC95\uC120 +Y)\uC73C\uB85C \uB215\uD600 \uBF51\uC558\uB2E4."
